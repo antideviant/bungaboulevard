@@ -96,7 +96,7 @@ echo "<script>alert('Something went wrong. Please try again.');</script>";
 
     .btn1 {
         color: #fff;
-        background-color:  #c28163; 
+        background-color:  #c28163; /* Adjust color */
         border-color: #c28163;
     }
 
