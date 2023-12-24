@@ -1,5 +1,5 @@
 <?php session_start();
-error_reporting(0);
+error_reporting(0); 
 include_once('includes/config.php');
 // Code for User login
 if(isset($_POST['login']))
@@ -24,6 +24,7 @@ exit();
 }
 }
 ?>
+<!-- TEST TEST-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
