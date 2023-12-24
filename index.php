@@ -2,7 +2,7 @@
 error_reporting(0);
 include_once('includes/config.php');
 ?>
-//Test123
+<!--Test123-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
