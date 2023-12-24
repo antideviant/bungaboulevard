@@ -1,6 +1,4 @@
 <?php
 session_start();
 session_destroy();
-header('location:index.php'); 
-
-//MIMI HEREeeee
+header('location:index.php');
