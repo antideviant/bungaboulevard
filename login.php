@@ -55,14 +55,14 @@ exit();
             <div class="card card-outline card-primary" style="margin: 14%; padding: 5%; border: 2px solid #c28163; border-radius: 15px; box-shadow: 0px 0px 5px #c28163;">
                 <div class="card-body">
                 <br>
-                <h3 class="login-box-msg" style="text-align: left;">Step into Elegance<br>
-                    with <a href="admin/index.php" style="text-decoration:none; color:#000">Ayunae,</a><br>
-                    Where Style Meets Comfort.
+                <h3 class="login-box-msg" style="text-align: left;">Login now<br>
+                    and <a href="admin/index.php" style="text-decoration:none; color:#000">Embrace,</a><br>
+                    Your Unique Style.
                 </h3>
                 <br>
                 <form method="post" name="login">
                     <div class="input-group mb-3">
-                        <label for="email" class="input-group-text" style="width: 95px;">E-Mail</label>
+                        <label for="email" class="input-group-text" style="width: 95px;">E-mail</label>
                         <input type="email" class="form-control" name="emailid" placeholder="Please enter your e-mail" required>
                         <span id="user-email-status" style="font-size:12px;"></span>
                     </div>
@@ -76,23 +76,23 @@ exit();
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="icheck-primary">
-                                <input type="checkbox" id="remember">
-                                <label for="remember">Remember Me</label>
-                            </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="icheck-primary">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember Me</label>
                         </div>
+                        <small><a href="password-recovery.php" style="color:#c28163">Forgot Password?</a></small>
                     </div>
-
-                    <small><a href="password-recovery.php" style="color:#c28163">Forgot Password?</a></small>
 
                     <div class="row mt-3">
                         <div class="col-6">
                             <button type="submit" name="login" id="login" class="btn btn-info btn-block btn-lg btn1" value="Login">Log In</button>
                         </div>
                         <div class="col-6">
-                            <a href="signup.php" class="text-center btn btn-info btn-block btn-lg btn2">Sign Up</a>
+                            <a href="signup.php" class="text-center btn btn-primary btn-block btn-lg" style="background-color: #c28163; border-color: #c28163;">Sign Up</a>
+                        </div>
+                        <div class="col-12 mt-2 text-center">
+                            <br><small>Are you admin? <a href="admin/index.php" style="color:#c28163">Log In</a> here!</small>
                         </div>
                     </div>
                     <br>
