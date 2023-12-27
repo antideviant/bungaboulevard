@@ -8,14 +8,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 text-center text-brown">
-                <img src="assets\bblogo.png" alt="Brand Logo" style="max-height: 100px; margin-bottom: 10px; margin-right: 1100px;">
+                <img src="assets\bblogo.png" alt="Brand Logo" style="max-height: 100px; margin-bottom: 20px; margin-right: 500px;">
                 <h5 style="font-weight: bold; text-align: left; font-family: Helvetica, Arial, sans-serif;">BungaBoulevard</h5>
                 <p style="text-align: left; text-align: justify; font-family: Helvetica, Arial, sans-serif;">
-                    Raya brand clothing that blends <br>tradition and contemporary style.
-                    <br>Experience elegance, inclusivity, <br> and timeless classics inspired by <br>Malaysia's beauty.
+                Experience the fusion of <br> trendy style and casual <br> comfort.
                 </p>
             </div>
-            <div class="col-lg-4 col-md-6 text-brown" style="margin-top: 70px;">
+            <div class="col-lg-4 col-md-6 text-brown" style="margin-top: 15px;">
                 <h5 style="font-weight: bold; font-family: Helvetica, Arial, sans-serif;">Customer Services</h5>
                 <p>
                     <img src="assets/icon/time.png" alt="Business Time" style="height: 20px; width: 20px; margin-right: 5px;">
@@ -53,7 +52,7 @@
 
         </div>
         <hr/>
-        <p class="m-0 text-center text-brown">Copyright 2023 © Ayunae.co</p>
+        <p class="m-0 text-center text-brown">Copyright 2023 © BungaBoulevard.co</p>
     </div>
 </footer>
 
