@@ -14,7 +14,7 @@ $query=mysqli_query($con,"select id from wishlist where userId='$userid' and pro
 $count=mysqli_num_rows($query);
 if($count==0){
 mysqli_query($con,"insert into wishlist(userId,productId) values('$userid','$pid')");
-echo "<script>alert('Product aaded in wishlist');</script>";
+echo "<script>alert('Product added in wishlist');</script>";
   echo "<script type='text/javascript'> document.location ='my-wishlist.php'; </script>";
 } else { 
 echo "<script>alert('This product is already added in your wishlist.');</script>";
@@ -83,7 +83,7 @@ $catid=$row['catid'];
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" alt="<?php echo htmlentities($row['productName']);?>" width="250" height="850"  style="border:solid 1px #000;"/>
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" alt="<?php echo htmlentities($row['productName']);?>" width="250" height="830"  style="border:solid 1px #000;"/>
 <img src="admin/productimages/<?php echo htmlentities($row['productImage2']);?>" width="291" style="border:solid 1px #000;">
 <img src="admin/productimages/<?php echo htmlentities($row['productImage3']);?>" width="292" style="border:solid 1px #000;">
 
@@ -100,7 +100,7 @@ $catid=$row['catid'];
                             <div class="small mb-1"><strong>Delivery Charges: </strong> RM<?php echo htmlentities($row['shippingCharge']);?></div>
                         </div>
 
-                        <p class="lead"><?php echo $row['productDescription'];?></p>
+                        <p class="lead"><?php echo nl2br($row['productDescription']); ?></p>
 <?php if($row['productAvailability']=='In Stock'):?>
 
     <div class="d-flex">

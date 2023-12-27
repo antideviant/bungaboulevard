@@ -52,7 +52,7 @@ while($row=mysqli_fetch_array($query))
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" width="350" height="400" alt="<?php echo htmlentities($row['productName']);?>" />
+                            <img class="card-img-top" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" width="350" height="370" alt="<?php echo htmlentities($row['productName']);?>" />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">

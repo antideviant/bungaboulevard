@@ -60,18 +60,6 @@ echo "<script>window.location.href='manage-products.php'</script>";
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                        <th>#</th>
-                                            <th>Product Name</th>
-                                            <th>Sub Category</th>                                           
-                                            <th>Category</th>
-                                            <th>Creation date</th>
-                                            <th>Last Updated</th>
-                                            <th>Created by</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
 <?php $query=mysqli_query($con,"select products.id as pid,products.productImage1,products.productName,category.categoryName,subcategory.subcategoryName as subcatname,products.postingDate,products.updationDate,subcategory.id as subid,tbladmin.username from products join subcategory on products.subCategory=subCategory.id join category on products.category=category.id join tbladmin on tbladmin.id=products.addedBy order by pid desc");
 $cnt=1;

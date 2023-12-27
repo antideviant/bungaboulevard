@@ -53,7 +53,7 @@ include_once('includes/config.php');
  
   <div class="text">
   <h1 class="display-4 fw-bolder" style="font-size:40px;">Minimalist Grace</h1>
-        <p> Embracing Tradition with Baju Kurung </p>
+        <p id="slogan"> Embracing Tradition with Baju Kurung </p>
         <div style="position: relative; left: -14rem;">
           <h6 ><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onClick="scrollWin()"
   value='click here'>SHOP NOW</button></h6>
@@ -102,7 +102,7 @@ if (isset($_GET['page_no']) && $_GET['page_no']!="") {
     $second_last = $total_no_of_pages - 1; // total page minus 1
 
 
-    $query=mysqli_query($con,"select products.id as pid,products.productImage1,products.productName,products.productPriceBeforeDiscount,products.productPrice from products order by pid desc LIMIT $offset, $total_records_per_page ");
+    $query = mysqli_query($con, "SELECT products.id as pid, category.id as cid, category.categoryName, products.productImage1, products.productName, products.productPriceBeforeDiscount, products.productPrice FROM products INNER JOIN category ON products.category = category.id ORDER BY pid DESC LIMIT $offset, $total_records_per_page");
 $cnt=1;
 while($row=mysqli_fetch_array($query))
 {
@@ -111,10 +111,11 @@ while($row=mysqli_fetch_array($query))
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" width="350" height="400" alt="<?php echo htmlentities($row['productName']);?>" />
+                            <img class="card-img-top" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" width="350" height="370" alt="<?php echo htmlentities($row['productName']);?>" />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
+                                    <h6 class="fw"><?php echo htmlentities($row['categoryName']);?></h6>
                                     <!-- Product name-->
                                     <h5 class="fw-bolder"><?php echo htmlentities($row['productName']);?></h5>
                                     <!-- Product price-->
@@ -233,7 +234,8 @@ header {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
-  margin-left: -14rem;
+  margin-left: 0;
+  text-align: left;
 }
 
 h1 {
@@ -241,6 +243,14 @@ h1 {
   margin-bottom: 1rem;
   margin-left: -14rem;
   font-family:"Oswald";
+}
+
+#slogan{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: -14rem;
+  font-family:"Helvetica";
+  font-size: 20px;
 }
 
 .product-hea{

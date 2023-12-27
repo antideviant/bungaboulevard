@@ -60,17 +60,6 @@ echo "<script>window.location.href='manage-categories.php'</script>";
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                        <th>#</th>
-                                            <th>Category</th>
-                                            <th>Description</th>
-                                            <th>Creation date</th>
-                                            <th>Last Updated</th>
-                                            <th>Created by</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
 <?php $query=mysqli_query($con,"select category.id as catid,category.categoryName,category.categoryDescription,category.creationDate,category.updationDate,tbladmin.username from category join tbladmin on tbladmin.id=category.createdBy");
 $cnt=1;

@@ -8,22 +8,23 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 text-center text-brown">
-                <h5 style="font-weight: bold; text-align: left; font-family: Helvetica, Arial, sans-serif;">Ayunae.co</h5>
+                <img src="assets\bblogo.png" alt="Brand Logo" style="max-height: 100px; margin-bottom: 10px; margin-right: 1100px;">
+                <h5 style="font-weight: bold; text-align: left; font-family: Helvetica, Arial, sans-serif;">BungaBoulevard</h5>
                 <p style="text-align: left; text-align: justify; font-family: Helvetica, Arial, sans-serif;">
                     Raya brand clothing that blends <br>tradition and contemporary style.
                     <br>Experience elegance, inclusivity, <br> and timeless classics inspired by <br>Malaysia's beauty.
                 </p>
             </div>
-            <div class="col-lg-4 col-md-6 text-brown">
+            <div class="col-lg-4 col-md-6 text-brown" style="margin-top: 70px;">
                 <h5 style="font-weight: bold; font-family: Helvetica, Arial, sans-serif;">Customer Services</h5>
                 <p>
                     <img src="assets/icon/time.png" alt="Business Time" style="height: 20px; width: 20px; margin-right: 5px;">
-                    Monday - Saturday (8 a.m - 8 p.m)
+                    Monday - Saturday (8 A.M. - 8 P.M.)
                 </p>
                 <p>
                     <a href="mailto:ayunaeco@gmail.com" style="text-decoration: none; color: inherit; font-family: Helvetica, Arial, sans-serif;">
                         <img src="assets/icon/email.png" alt="Email" style="height: 20px; width: 20px; margin-right: 5px;">
-                        ayunaeco@gmail.com
+                        bungaboulevard@gmail.com
                     </a>
                 </p>
                 <p>
@@ -34,7 +35,7 @@
                 </p>
             </div>
             
-            <div class="col-lg-4 text-center text-brown">
+            <div class="col-lg-4 text-center text-brown" style="margin-top: 100px;">
                 <h5 style="font-weight: bold; text-align: left; font-family: Helvetica, Arial, sans-serif;">Follow Us</h5>
                 <div style="display: flex; justify-content: left;">
                     <a href="https://wa.me/0162166057?text=id%20like%20to%20%20make%20a%20purchase" style="margin-right: 10px;">

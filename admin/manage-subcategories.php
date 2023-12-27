@@ -60,18 +60,6 @@ echo "<script>window.location.href='manage-subcategories.php'</script>";
                                             <th>Action</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                        <th>#</th>
-
-                                            <th>Sub Category</th>                                           
-                                            <th>Category</th>
-                                            <th>Creation date</th>
-                                            <th>Last Updated</th>
-                                            <th>Created by</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </tfoot>
                                     <tbody>
 <?php $query=mysqli_query($con,"select category.categoryName,subcategory.subcategoryName as subcatname,subcategory.creationDate,subcategory.updationDate,subcategory.id as subid,tbladmin.username from subcategory join category on subcategory.categoryid=category.id join tbladmin on tbladmin.id=subcategory.createdBy");
 $cnt=1;

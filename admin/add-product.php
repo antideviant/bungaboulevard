@@ -35,7 +35,7 @@ $addedby=$_SESSION['aid'];
     move_uploaded_file($_FILES["productimage3"]["tmp_name"],"productimages/".$imgnewfile3);
 $sql=mysqli_query($con,"insert into products(category,subCategory,productName,productSize,productPrice,productDescription,shippingCharge,productAvailability,productImage1,productImage2,productImage3,productPriceBeforeDiscount,addedBy) values('$category','$subcat','$productname','$productsize','$productprice','$productdescription','$productscharge','$productavailability','$imgnewfile1','$imgnewfile2','$imgnewfile3','$productpricebd','$addedby')");
 echo "<script>alert('Product Added added successfully');</script>";
-echo "<script>window.location.href='manage-subcategories.php'</script>";
+echo "<script>window.location.href='manage-products.php'</script>";
 }
 
 
