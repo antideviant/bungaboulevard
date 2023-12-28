@@ -2,7 +2,6 @@
 error_reporting(0);
 include_once('includes/config.php');
 ?>
-<!--Test123-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -27,9 +26,9 @@ include_once('includes/config.php');
         }
         </style>
         
-        <title>Ayunae | Home </title>
+        <title>BungaBoulevard | Home </title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/logo-nobg.png" />
+        <link rel="icon" type="image/x-icon" href="assets/bblogo.png" />
         <!-- Custom icons-->
         <link href="css/custom-icons.css" rel="stylesheet" />
         <!-- Core theme CSS -->
@@ -39,9 +38,8 @@ include_once('includes/config.php');
     <body>
     <?php include_once('includes/header.php');?>
     <header class="w3-display-container w3-wide" id="home">
-        <img class="w3-image" src="/ayunae/assets/home.jpg" alt="Fashion Blog" width="1600" height="1060">
+        <img class="w3-image" src="/bungaboulevard/assets/homebg.png" alt="Fashion Blog" width="1600" height="1060">
         <div class="w3-display-right w3-padding-large" style = "position:relative; left:680px; top:-180px;">
-        <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" style="color:#cf8d88;"onClick="location.href='shop-categories.php'" value='click here'>SHOP NOW</button></h6> </div>
     </header>
         
         <!-- Section-->
