@@ -62,7 +62,12 @@ error_reporting(0);
         <img src="assets\black.jpg" style="width: 330px; height: 500px; margin-left: -100px;">
     </div>
     <div class="right-text" style="font-size: 18px; text-align: justify; margin-left: 50px; font-family: Helvetica, Arial, sans-serif;">
-        <b><p>Ayunae translates to <span style="color: brown;">"prettiness"</span> or <span style="color: brown;">"cantiknya"</span> in Malay. Our brand values the aesthetics showcasing minimalism and versatility in our designs. We start this journey as a mother and daughter duo bonded through a passion for fashion & it brings us great joy to welcome you to our vision.</p>
+        <b><p>Welcome to the BungaBoulevard website, where style is connected into every thread and fashion is just a click away. 
+            Our focus extends beyond selling items to selecting a range that speaks to your own style journey. 
+            At BungaBoulevard, we believe in <span style="color: brown;"> "Style in Every Thread, Fashion in Every Click," </span> 
+            which means that every click on our platform takes you to a world of curated elegance, where your fashion narrative develops seamlessly. 
+            Join us as we transform how you invest in and express yourself - because at BungaBoulevard, style is more than just a choice; 
+            it's a seamless experience waiting for you to explore, one click at a time.</p>
     </div>
 </div>
 
