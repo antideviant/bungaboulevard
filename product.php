@@ -13,9 +13,9 @@ include_once('includes/config.php');
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Ayunae | Products </title>
+        <title>BungaBoulevard | Products </title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets\logo-nobg.png" />
+        <link rel="icon" type="image/x-icon" href="assets/bblogo.png" />
         <!-- Custom icons-->
         <link href="css/custom-icons.css" rel="stylesheet" />
         <!-- Core theme CSS -->

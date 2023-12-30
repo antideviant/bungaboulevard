@@ -32,9 +32,9 @@ if ($result) {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Ayunae | My Wishlist</title>
+        <title>BungaBoulevard | My Wishlist</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets\logo-nobg.png" />
+        <link rel="icon" type="image/x-icon" href="assets/bblogo.png" />
         <!-- Custom icons-->
         <link href="css/custom-icons.css" rel="stylesheet" />
         <!-- Core theme CSS -->
