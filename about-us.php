@@ -56,7 +56,7 @@ error_reporting(0);
                 <div class="container-1">
     <div class="left-text">
         <h1><b><p style="color: brown; font-size: 50px;">About Us</p></b></h1>
-        <h5>Enchanting Elegance <br>for Eid and Beyond</h5>
+        <h5>Style in Every Thread, <br>Fashion in Every Click</h5>
     </div>
     <div class="image">
         <img src="assets\black.jpg" style="width: 330px; height: 500px; margin-left: -100px;">
