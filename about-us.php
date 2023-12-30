@@ -56,18 +56,19 @@ error_reporting(0);
                 <div class="container-1">
     <div class="left-text">
         <h1><b><p style="color: brown; font-size: 50px;">About Us</p></b></h1>
-        <h5>Style in Every Thread, <br>Fashion in Every Click</h5>
+        <h5>Experience the fusion of<br>trendy style and casual<br>comfort. </h5>
     </div>
     <div class="image">
         <img src="assets\black.jpg" style="width: 330px; height: 500px; margin-left: -100px;">
     </div>
     <div class="right-text" style="font-size: 18px; text-align: justify; margin-left: 50px; font-family: Helvetica, Arial, sans-serif;">
-        <b><p>Welcome to the BungaBoulevard website, where style is connected into every thread and fashion is just a click away. 
-            Our focus extends beyond selling items to selecting a range that speaks to your own style journey. 
-            At BungaBoulevard, we believe in <span style="color: brown;"> "Style in Every Thread, Fashion in Every Click," </span> 
-            which means that every click on our platform takes you to a world of curated elegance, where your fashion narrative develops seamlessly. 
-            Join us as we transform how you invest in and express yourself - because at BungaBoulevard, style is more than just a choice; 
-            it's a seamless experience waiting for you to explore, one click at a time.</p>
+        <b><p>We encourage you to fully immerse yourself in the dynamic world of fashion at BungaBoulevard, 
+            where every click is an investigation of style and comfort. 
+            Navigate through our chosen collections to <span style="color: brown;"> "Experience the fusion of trendy style and casual comfort"</span>, 
+            carefully designed to improve your wardrobe with the newest trends and easy elegance. 
+            We think that fashion should be a seamless combination of stylish aesthetics and everyday comfort, 
+            and we're committed to providing you with a shopping experience that matches this attitude. 
+            Explore, Click, and Experience the blend of modern style and casual comfort with us.</p>
     </div>
 </div>
 
