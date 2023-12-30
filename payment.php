@@ -43,9 +43,9 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Ayunae | Payment Gateaway</title>
+        <title>BungaBoulevard | Payment Gateaway</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/logo-nobg.png.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/bblogo.png" />
         <!-- Custom icons-->
         <link href="css/custom-icons.css" rel="stylesheet" />
         <!-- Core theme CSS -->
