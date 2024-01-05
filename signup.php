@@ -33,7 +33,7 @@ echo "<script>alert('Not register something went worng');</script>";
         <meta name="author" content="" />
         <title>Ayunae | Sign up</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets\logo-nobg.png" />
+        <link rel="icon" type="image/x-icon" href="assets/bblogo.png" />
         <!-- Custom icons-->
         <link href="css/custom-icons.css" rel="stylesheet" />
         <!-- Core theme CSS -->
