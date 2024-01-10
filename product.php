@@ -25,10 +25,12 @@ include_once('includes/config.php');
     <body>
 <?php include_once('includes/header.php');?>
         <!-- Header-->
+
 <br></br>
 
 <header class="product-hea">
 
+           
  <div class="slideshow-container">
 
   <!-- Full-width images with number and caption text -->
@@ -50,11 +52,11 @@ include_once('includes/config.php');
     </div>
  
   <div class="text">
-  <h1 class="display-4 fw-bolder" style="font-size:40px;">BungaBoulevard</h1>
-        <p id="slogan"> Experience the fusion of trendy style and casual comfort. </p>
+  <h1 class="display-4 fw-bolder" style="font-size:40px;">Minimalist Grace</h1>
+        <p id="slogan"> Embracing Tradition with Baju Kurung </p>
         <div style="position: relative; left: -14rem;">
           <h6 ><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onClick="scrollWin()"
-            value='click here'>SHOP NOW</button></h6>
+  value='click here'>SHOP NOW</button></h6>
         </div>
       </div>
 </div>
@@ -62,10 +64,10 @@ include_once('includes/config.php');
 </div>
             </div>
         </header>
-          <!-- Next and previous buttons -->
-          <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div> -->
+  <!-- Next and previous buttons -->
+  <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div> -->
 <br>
 
 <!-- The dots/circles -->
@@ -101,42 +103,45 @@ if (isset($_GET['page_no']) && $_GET['page_no']!="") {
 
 
     $query = mysqli_query($con, "SELECT products.id as pid, category.id as cid, category.categoryName, products.productImage1, products.productName, products.productPriceBeforeDiscount, products.productPrice FROM products INNER JOIN category ON products.category = category.id ORDER BY pid DESC LIMIT $offset, $total_records_per_page");
-    $cnt=1;
-    while($row=mysqli_fetch_array($query))
-    {
-    ?> 
-    <div class="col mb-5">
-        <div class="card h-100">
-            <!-- Product image as a hyperlink -->
-            <a href="product-details.php?pid=<?php echo htmlentities($row['pid']);?>">
-                <img class="card-img-top" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" width="350" height="320" alt="<?php echo htmlentities($row['productName']);?>" />
-            </a>
-            <!-- Product details-->
-            <div class="card-body p-4">
-                <div class="text-center">
-                    <h6 class="fw"><?php echo htmlentities($row['categoryName']);?></h6>
-                    <!-- Product name-->
-                    <h5 class="fw-bolder"><?php echo htmlentities($row['productName']);?></h5>
-                    <!-- Product price-->
-                    <span class="text-decoration-line-through">RM<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span> - RM<?php echo htmlentities($row['productPrice']);?>
-                </div>
-            </div>
-            <!-- Product actions-->
-            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product-details.php?pid=<?php echo htmlentities($row['pid']);?>">Quick View</a></div>
-            </div>
-        </div>
-    </div>
+$cnt=1;
+while($row=mysqli_fetch_array($query))
+{
+?> 
+
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" width="350" height="370" alt="<?php echo htmlentities($row['productName']);?>" />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <h6 class="fw"><?php echo htmlentities($row['categoryName']);?></h6>
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder"><?php echo htmlentities($row['productName']);?></h5>
+                                    <!-- Product price-->
+                                    <span class="text-decoration-line-through">RM<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span> - RM<?php echo htmlentities($row['productPrice']);?>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product-details.php?pid=<?php echo htmlentities($row['pid']);?>">Quick View</a></div>
+                            </div>
+                        </div>
+                    </div>
                 <?php } ?>
+     
+    
+
                 </div>
             </div>
+
 
  <div style='padding: 10px 20px 0px; border-top: dotted 1px #CCC;'>
 <strong>Page <?php echo $page_no." of ".$total_no_of_pages; ?></strong>
 </div>
  
 
-<nav aria-label="Pagination">
+ <nav aria-label="Pagination">
                         <hr class="my-0">
 <ul class="pagination justify-content-center my-4">
     
@@ -208,6 +213,8 @@ if (isset($_GET['page_no']) && $_GET['page_no']!="") {
         echo "<li><a href='?page_no=$total_no_of_pages' class='page-link'>Last &rsaquo;&rsaquo;</a></li>";
         } ?>
 </ul>
+ 
+ 
 
 </div>
         </section>
@@ -249,13 +256,12 @@ h1 {
 .product-hea{
   background-color:#F2F2F2;
   height: 1000px; 
+  
 }
-
 .mySlides
 {
   margin-top:30px;
 }
-
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -281,6 +287,8 @@ h1 {
   width:10%;
   margin-left: 1px;
   size:100px;
+
+
 }
 
 /* Number text (1/3 etc) */
@@ -296,13 +304,14 @@ h1 {
 /* Fading animation */
  .fade {
   animation-name: fade;
-  animation-duration: 5.0s;
+  animation-duration: 4.0s;
 }
 
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
+
 </style>
 <script>
  
