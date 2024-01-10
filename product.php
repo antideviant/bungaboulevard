@@ -127,7 +127,6 @@ if (isset($_GET['page_no']) && $_GET['page_no']!="") {
             </div>
         </div>
     </div>
-
                 <?php } ?>
                 </div>
             </div>
