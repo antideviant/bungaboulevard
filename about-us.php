@@ -59,10 +59,10 @@ error_reporting(0);
         <h5>Experience the fusion of<br>trendy style and casual<br>comfort. </h5>
     </div>
     <div class="image">
-        <img src="assets\black.jpg" style="width: 330px; height: 500px; margin-left: -100px;">
+        <img src="assets\aboutus2.jpg" style="width: 330px; height: 450px; margin-left: -100px;">
     </div>
-    <div class="right-text" style="font-size: 18px; text-align: justify; margin-left: 50px; font-family: Helvetica, Arial, sans-serif;">
-        <b><p>We encourage you to fully immerse yourself in the dynamic world of fashion at BungaBoulevard, 
+    <div class="right-text" style="font-size: 15px; text-align: justify; margin-left: 50px; font-family: Helvetica, Arial, sans-serif;">
+        <p>We encourage you to fully immerse yourself in the dynamic world of fashion at BungaBoulevard, 
             where every click is an investigation of style and comfort. 
             Navigate through our chosen collections to <span style="color: brown;"> "Experience the fusion of trendy style and casual comfort"</span>, 
             carefully designed to improve your wardrobe with the newest trends and easy elegance. 
@@ -76,7 +76,7 @@ error_reporting(0);
             </div>
 
     <br><header class="w3-display-container w3-wide" id="team">
-    <center><img class="w3-image" src="/ayunae/assets/team.png" alt="Team Ayunae" width="1140" height="600">
+    <center><img class="w3-image" src="/ayunae/assets/team.png" alt="Team BungaBoulevard" width="1140" height="600">
         <div class="w3-display-right w3-padding-large" style = "position:relative; left:650px; top:-180px;"></center>
     </header>
 
