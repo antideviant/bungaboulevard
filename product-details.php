@@ -84,7 +84,7 @@ $catid=$row['catid'];
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                 <div class="col-md-6">
-                  <img class="card-img-top mb-5 mb-md-0" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" alt="<?php echo htmlentities($row['productName']);?>" width="90%" style="border: solid 1px #000; max-height: 700px; object-fit: cover;">
+                  <img class="card-img-top mb-5 mb-md-0" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" alt="<?php echo htmlentities($row['productName']);?>" width="950%" style="border: solid 1px #000; max-height: 560px; object-fit: cover;">
                   <div class="d-flex justify-content-between mt-3">
                       <img src="admin/productimages/<?php echo htmlentities($row['productImage2']);?>" width="48%" style="border: solid 1px #000; object-fit: cover;">
                       <img src="admin/productimages/<?php echo htmlentities($row['productImage3']);?>" width="48%" style="border: solid 1px #000; object-fit: cover;">

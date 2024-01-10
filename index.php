@@ -66,17 +66,15 @@ if (isset($_GET['page_no']) && $_GET['page_no']!="") {
     $total_no_of_pages = ceil($total_records / $total_records_per_page);
     $second_last = $total_no_of_pages - 1; // total page minus 1
 
-
     $query=mysqli_query($con,"select products.id as pid,products.productImage1,products.productName,products.productPriceBeforeDiscount,products.productPrice from products order by pid desc LIMIT $offset, $total_records_per_page ");
-$cnt=1;
-while($row=mysqli_fetch_array($query))
-{
-?> 
-
+        $cnt=1;
+        while($row=mysqli_fetch_array($query))
+        {
+        ?> 
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" width="350" height="400" alt="<?php echo htmlentities($row['productName']);?>" />
+                            <img class="card-img-top" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" width="350" height="320" alt="<?php echo htmlentities($row['productName']);?>" />
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
