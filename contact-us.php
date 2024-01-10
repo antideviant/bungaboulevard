@@ -6,7 +6,6 @@ error_reporting(0);
 <html lang="en">
 
 <style>
-    
 .text{
 
     font-family: serif;
@@ -34,7 +33,6 @@ error_reporting(0);
     background: #fff;
     color: #000000;
 }
-
 </style>
 
     <head>
@@ -62,8 +60,6 @@ error_reporting(0);
                 <div class="text-center text-white">
                     <br><br><h1 class="display-4 fw-bolder">Contact Us</h1>
                     <h5 class="display-10">A mother-daughter duo brand | Comfort & Versatility</h5>
-
-        
                 </div>
             </div>
         </header>
@@ -98,7 +94,6 @@ error_reporting(0);
     }
 </style>
 
-            
 <div class="text">
     <ul class="social-icons">
         <li>
@@ -108,19 +103,19 @@ error_reporting(0);
             <p><a href="https://wa.me/0162166057?text=id%20like%20to%20%20make%20a%20purchase">WhatsApp</a></p>
         </li>
         <li>
-            <a href="https://www.facebook.com/ayunae.co">
+            <a href="https://www.facebook.com/bungaboulevard.co">
                 <i class="fab fa-facebook"></i>
             </a>
-            <p><a href="https://www.facebook.com/ayunae.co">Facebook</a></p>
+            <p><a href="https://www.facebook.com/bungaboulevard.co">Facebook</a></p>
         </li>
         <li>
-            <a href="https://www.instagram.com/ayunae.co/">
+            <a href="https://www.instagram.com/bungaboulevard.co/">
                 <i class="fab fa-instagram"></i>
             </a>
-            <p><a href="https://www.instagram.com/ayunae.co/">Instagram</a></p>
+            <p><a href="https://www.instagram.com/bungaboulevard.co/">Instagram</a></p>
         </li>
         <li>
-            <a href="mailto:ayunae@gmail.com">
+            <a href="mailto:bungaboulevard@gmail.com">
                 <i class="far fa-envelope email"></i>
             </a>
             <p><a href="mailto:ayunae@gmail.com">Email</a></p>
@@ -128,9 +123,6 @@ error_reporting(0);
     </ul>
 </div>
 
-
-
- 
 <!--</div>--> 
         </section>
         <!-- Footer-->

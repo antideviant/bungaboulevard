@@ -24,7 +24,7 @@ exit();
 }
 }
 ?>
-<!-- TEST TEST-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

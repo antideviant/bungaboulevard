@@ -3,20 +3,20 @@ session_start();
 //error_reporting(E_ALL);
 include("includes/config.php");
 if(isset($_POST['submit']))
-{
-$username=$_POST['username'];
-$password=md5($_POST['inputPassword']);
-$ret=mysqli_query($con,"SELECT id FROM tbladmin WHERE username='$username' and password='$password'");
-$num=mysqli_fetch_array($ret);
-if($num>0)
-{
-$_SESSION['alogin']=$_POST['username'];
-$_SESSION['aid']=$num['id'];
-header("location:dashboard.php");
-}else{
-echo "<script>alert('Invalid username or password');</script>";
-//header("location:index.php");
-}
+    {
+        $username=$_POST['username'];
+        $password=md5($_POST['inputPassword']);
+        $ret=mysqli_query($con,"SELECT id FROM tbladmin WHERE username='$username' and password='$password'");
+        $num=mysqli_fetch_array($ret);
+            if($num>0)
+            {
+            $_SESSION['alogin']=$_POST['username'];
+            $_SESSION['aid']=$num['id'];
+        header("location:dashboard.php");
+            } else{
+        echo "<script>alert('Invalid username or password');</script>";
+        //header("location:index.php");
+    }
 }
 ?>
 

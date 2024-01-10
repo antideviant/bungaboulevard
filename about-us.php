@@ -4,22 +4,18 @@ error_reporting(0);
 ?>
 <!DOCTYPE html>
 
-
 <style>
-     .left-text,
+    .left-text,
     .right-text {
-      flex: 1;
-          }
+        flex: 1;
+    }
 
- .container-1{
-   
-    display: flex; 
-    align-items: center;
-    padding: -2%;
-    font-family: Helvetica, Arial, sans-serif;;
-}
-
-
+    .container-1{
+        display: flex; 
+        align-items: center;
+        padding: -2%;
+        font-family: Helvetica, Arial, sans-serif;
+    }
 </style>
 
 <html lang="en">
@@ -71,14 +67,7 @@ error_reporting(0);
             Explore, Click, and Experience the blend of modern style and casual comfort with us.</p>
     </div>
 </div>
-
-                <!-- </div> -->
-            </div>
-
-    <br><header class="w3-display-container w3-wide" id="team">
-    <center><img class="w3-image" src="/ayunae/assets/team.png" alt="Team BungaBoulevard" width="1140" height="600">
-        <div class="w3-display-right w3-padding-large" style = "position:relative; left:650px; top:-180px;"></center>
-    </header>
+</div><br>
 
 <!-- Footer-->
    <?php include_once('includes/footer.php'); ?>
