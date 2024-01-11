@@ -36,19 +36,19 @@ include_once('includes/config.php');
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="assets\slide\limeblue1.png" style="width:70%">
+    <img src="assets\slide\aboutus2.jpg" style="width:70%">
 
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="assets\slide\black1.png" style="width:70%">
+    <img src="assets\slide\aboutus3.jpg" style="width:70%">
  
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="assets\slide\cleo1.png" style="width:70%">
+    <img src="assets\slide\aboutus1.jpg" style="width:70%">
     </div>
  
   <div class="text">
