@@ -30,45 +30,43 @@ include_once('includes/config.php');
 
 <header class="product-hea">
 
-           
- <div class="slideshow-container">
+  <div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="assets\slide\aboutus2.jpg" style="width:70%">
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="assets\slide\aboutus2.jpg" style="width:70%">
 
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="assets\slide\aboutus3.jpg" style="width:70%">
- 
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="assets\slide\aboutus1.jpg" style="width:70%">
     </div>
- 
-  <div class="text">
-  <h1 class="display-4 fw-bolder" style="font-size:40px;">Minimalist Grace</h1>
-        <p id="slogan"> Embracing Tradition with Baju Kurung </p>
-        <div style="position: relative; left: -14rem;">
-          <h6 ><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onClick="scrollWin()"
-  value='click here'>SHOP NOW</button></h6>
-        </div>
-      </div>
-</div>
 
-</div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="assets\slide\aboutus3.jpg" style="width:70%">
+  
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="assets\slide\aboutus1.jpg" style="width:70%">
+    </div>
+  
+    <div class="text">
+      <h1 class="display-4 fw-bolder" style="font-size:40px;">Minimalist Grace</h1>
+          <p id="slogan"> Embracing Tradition with Baju Kurung </p>
+            <div style="position: relative; left: -14rem;">
+              <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onClick="scrollWin()"
+                  value='click here'>SHOP NOW </button>
+              </h6>
             </div>
-        </header>
+    </div>
+  </div>
+<br>
+</header>
   <!-- Next and previous buttons -->
   <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div> -->
-<br>
+<br></br>
 
 <!-- The dots/circles -->
 <!-- <div style="text-align:center">
@@ -255,8 +253,7 @@ h1 {
 
 .product-hea{
   background-color:#F2F2F2;
-  height: 680px; 
-  
+  background-size: 100% 100%; 
 }
 .mySlides
 {
@@ -272,7 +269,7 @@ h1 {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -286,11 +283,9 @@ h1 {
   font-size: 30px;
   padding: 8px 12px;
   position: relative;
-  width:10%;
+  width:auto;
   margin-left: 1px;
   size:100px;
-
-
 }
 
 /* Number text (1/3 etc) */
