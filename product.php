@@ -260,8 +260,11 @@ h1 {
 }
 .mySlides
 {
+  width: 50%;
   margin-top:30px;
+  object-fit: cover; /* Use 'cover' to maintain aspect ratio and cover the entire box */
 }
+
 * {box-sizing:border-box}
 
 /* Slideshow container */
