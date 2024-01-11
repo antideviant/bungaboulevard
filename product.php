@@ -255,7 +255,7 @@ h1 {
 
 .product-hea{
   background-color:#F2F2F2;
-  height: 1000px; 
+  height: 680px; 
   
 }
 .mySlides
