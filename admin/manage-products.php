@@ -20,8 +20,8 @@ echo "<script>window.location.href='manage-products.php'</script>";
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Ayunae | Manage Products</title>
-        <link rel="icon" type="image/x-icon" href="assets\img\logo-nobg.png" />
+        <title>BungaBoulevard | Manage Products</title>
+        <link rel="icon" type="image/x-icon" href="assets\img\bblogo.png" />
         <!-- Custom icons-->
         <link href="css/custom-icons.css" rel="stylesheet" />
         <!-- Core theme CSS -->
