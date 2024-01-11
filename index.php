@@ -28,7 +28,7 @@ include_once('includes/config.php');
         
         <title>BungaBoulevard | Home </title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/bblogo.png" />
+        <link rel="icon" type="image/x-icon" href="assets/img/bblogo.png" />
         <!-- Custom icons-->
         <link href="css/custom-icons.css" rel="stylesheet" />
         <!-- Core theme CSS -->
