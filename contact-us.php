@@ -79,7 +79,7 @@ error_reporting(0);
         }
 
         .header-section {
-            background: #FF69B4; /* Updated header color to a more suitable theme */
+            background: #c28163; /* Updated header color to a more suitable theme */
             padding: 1em 0;
             text-align: center;
         }
