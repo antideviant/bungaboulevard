@@ -28,10 +28,10 @@ if(isset($_POST['submit']))
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Ayunae | Admin Login</title>
+        <title>BungaBoulevard | Admin Login</title>
         <link href="css/styles.css" rel="stylesheet" />
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets\img\logo-nobg.png" />
+        <link rel="icon" type="image/x-icon" href="assets\img\bblogo.png" />
         <!-- Custom icons-->
         <link href="css/custom-icons.css" rel="stylesheet" />
         <!-- Core theme CSS -->
