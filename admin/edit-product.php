@@ -35,8 +35,8 @@ echo "<script>window.location.href='manage-products.php'</script>";
         <meta name="description" content="" />
         <meta name="author" content="" />
 
-        <title>Ayunae | Edit Product Details</title>
-        <link rel="icon" type="image/x-icon" href="assets\img\logo-nobg.png" />
+        <title>BungaBoulevard | Edit Product Details</title>
+        <link rel="icon" type="image/x-icon" href="assets\img\bblogo.png" />
         <!-- Custom icons-->
         <link href="css/custom-icons.css" rel="stylesheet" />
         <!-- Core theme CSS -->
