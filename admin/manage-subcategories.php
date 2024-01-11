@@ -23,9 +23,9 @@ echo "<script>window.location.href='manage-subcategories.php'</script>";
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Ayunae | Manage Sub-Categories</title>
+        <title>BungaBoulevard | Manage Sub-Categories</title>
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="assets\img\logo-nobg.png" />
+        <link rel="icon" type="image/x-icon" href="assets\img\bblogo.png" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="js/all.min.js" crossorigin="anonymous"></script>
        
