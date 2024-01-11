@@ -39,8 +39,8 @@ echo "<script>window.location.href='manage-products.php'</script>";
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Ayunae | Update Image 3</title>
-        <link rel="icon" type="image/x-icon" href="assets\img\logo-nobg.png" />
+        <title>BungaBoulevard | Update Image 3</title>
+        <link rel="icon" type="image/x-icon" href="assets\img\bblogo.png" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="js/all.min.js" crossorigin="anonymous"></script>
         <script src="js/jquery-3.5.1.min.js"></script>

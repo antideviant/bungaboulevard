@@ -27,7 +27,7 @@ echo "<script>window.location.href='manage-categories.php'</script>";
         <meta name="author" content="" />
         <title>Admin | Add Category</title>
         <link href="css/styles.css" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="assets\img\logo-nobg.png" />
+        <link rel="icon" type="image/x-icon" href="assets\img\bblogo.png" />
         <script src="js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body>
