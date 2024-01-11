@@ -14,16 +14,25 @@ include_once('includes/config.php');
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
-        h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-        body {font-family: "Open Sans"}
-        
-        header {
-            margin-bottom: -100px; /* Adjust the value as needed */
-        }
+            h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+            body {font-family: "Open Sans"}
+            
+            header {
+                margin-bottom: -100px; /* Adjust the value as needed */
+            }
 
-        section {
-            margin-top: -50px; /* Adjust the value as needed */
-        }
+            section {
+                margin-top: -50px; /* Adjust the value as needed */
+            }
+
+            #background {
+                background-image: url('/bungaboulevard/assets/homebg.png'); 
+                background-size: 100% 100%; 
+                background-position: center; 
+                padding: 400px; 
+                margin-bottom:60px; 
+                background-repeat: no-repeat;
+            }
         </style>
         
         <title>BungaBoulevard | Home </title>
@@ -37,9 +46,7 @@ include_once('includes/config.php');
     </head>
     <body>
     <?php include_once('includes/header.php');?>
-    <header class="bg" style="background-image: url('/bungaboulevard/assets/homebg.png'); background-size: cover; background-position: center; height: 1000px; margin-bottom:60px;">
-    </header>
-        
+    <div id="background"></div>
         <!-- Section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
