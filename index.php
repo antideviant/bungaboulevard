@@ -37,9 +37,7 @@ include_once('includes/config.php');
     </head>
     <body>
     <?php include_once('includes/header.php');?>
-    <header class="w3-display-container w3-wide" id="home">
-        <img class="w3-image" src="/bungaboulevard/assets/homebg.png" alt="Fashion Blog" width="1600" height="1060">
-        <div class="w3-display-right w3-padding-large" style = "position:relative; left:680px; top:-180px;">
+    <header class="bg" style="background-image: url('/bungaboulevard/assets/homebg.png'); background-size: cover; background-position: center; height: 1000px; margin-bottom:60px;">
     </header>
         
         <!-- Section-->

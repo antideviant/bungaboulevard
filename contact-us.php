@@ -20,12 +20,22 @@ error_reporting(0);
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <style>
         body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
         }
 
+        .wrapper {
+            flex: 1;
+        }
+
+        html, body {
+            height: 100%;
+        }
+        
+        .container {
+            margin-bottom: auto;
+        }
+        
         .social-icons {
             list-style: none;
             text-align: center;
@@ -104,7 +114,7 @@ error_reporting(0);
         }
 
         .contact-info {
-            text-align: left;
+            text-align: center;
             max-width: 400px;
             margin: 0 auto;
         }
@@ -130,7 +140,7 @@ error_reporting(0);
         </div>
     </header>
 
-    <div class="text">
+    <div class="text wrapper">
         <ul class="social-icons">
             <li>
                 <a href="tel:+123456789">
@@ -171,5 +181,4 @@ error_reporting(0);
     <script src="js/custom.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
-
 </html>
