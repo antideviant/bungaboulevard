@@ -55,8 +55,8 @@ exit();
             <div class="card card-outline card-primary" style="margin: 14%; padding: 5%; border: 2px solid #c28163; border-radius: 15px; box-shadow: 0px 0px 5px #c28163;">
                 <div class="card-body">
                 <br>
-                <h3 class="login-box-msg" style="text-align: left;">Login now<br>
-                    and <a href="admin/index.php" style="text-decoration:none; color:#000">Embrace,</a><br>
+                <h3 class="login-box-msg" style="text-align: left;">Login now,<br>
+                    Discover and <a href="admin/index.php" style="text-decoration:none; color:#000">Embrace</a><br>
                     Your Unique Style.
                 </h3>
                 <br>
@@ -89,7 +89,7 @@ exit();
                             <button type="submit" name="login" id="login" class="btn btn-info btn-block btn-lg btn1" value="Login">Log In</button>
                         </div>
                         <div class="col-6">
-                            <a href="signup.php" class="text-center btn btn-primary btn-block btn-lg" style="background-color: #c28163; border-color: #c28163;">Sign Up</a>
+                            <a href="signup.php" class="text-center btn btn-info btn-block btn-lg btn2">Sign Up</a>
                         </div>
                         <div class="col-12 mt-2 text-center">
                             <br><small>Are you admin? <a href="admin/index.php" style="color:#c28163">Log In</a> here!</small>
@@ -146,15 +146,17 @@ exit();
     }
 
     .btn2 {
-        color: #fff;
-        background-color:  #cf8d88; 
-        border-color: #cf8d88;
-    }
+    margin-left: 0px;
+    color: #fff;    
+    background-color:  #b76e79;
+    border-color: #b76e79;
+}
 
-    .btn2:hover , .btn2:active {
-        color: #cf8d88;
-        background-color: #fff; 
-        border-color: #cf8d88;
+    .btn2:hover,
+    .btn2:active {
+        color: #b76e79;
+        background-color: #fff !important; /* Use !important to ensure higher specificity */
+        border-color: #b76e79;
     }
 </style>
 </html>

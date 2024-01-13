@@ -3,5 +3,15 @@ admin
 12345
 
 User Login:
-syaza123@gmail.com
-syaza123
+E-Mail:
+    aimandaniel@gmail.com
+    saramaya@gmail.com
+    azfarfahmi@gmail.com
+    sharifahsyafiqah@gmail.com
+    aqilrashid@gmail.com
+    sabrinawong@gmail.com
+    ikhmalfakhri@gmail.com
+    adrianaazman@gmail.com
+
+Password:
+12345

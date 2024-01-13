@@ -50,9 +50,9 @@ include_once('includes/config.php');
       <img src="assets\slide\aboutus1.jpg" style="width:70%">
     </div>
   
-    <div class="text">
-      <h1 class="display-4 fw-bolder" style="font-size:40px;">Minimalist Grace</h1>
-          <p id="slogan"> Embracing Tradition with Baju Kurung </p>
+    <div class="text" style="margin-left: -100px;">
+      <h1 class="display-4 fw-bolder" style="font-size:40px;">Minimalist & Versatility</h1>
+          <p id="slogan"> Fusion of Trendy & Comfort </p>
             <div style="position: relative; left: -14rem;">
               <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onClick="scrollWin()"
                   value='click here'>SHOP NOW </button>

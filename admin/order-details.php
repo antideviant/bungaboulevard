@@ -73,6 +73,11 @@ while($row=mysqli_fetch_array($query))
 
                     <div class="container-fluid px-4" >
                         <h1 class="mt-4"><strong>#<?php echo htmlentities($row['orderNumber']);?> Details</strong></h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item"><a href="dashboard.php"  style="color: brown;">Dashboard</a></li>
+                            <li class="breadcrumb-item"><a href="all-orders.php"  style="color: brown;">Manage All Orders</a></li>
+                            <li class="breadcrumb-item active">Manage Orders Details</li>
+                        </ol>
                         <div class="card mb-4">
                             <div class="card-header">
                                 <i class="fas fa-table me-1"></i>

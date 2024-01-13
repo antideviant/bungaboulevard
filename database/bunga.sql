@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 27, 2023 at 11:32 AM
+-- Generation Time: Jan 13, 2024 at 07:54 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -50,7 +50,14 @@ CREATE TABLE `addresses` (
 INSERT INTO `addresses` (`id`, `userId`, `billingAddress`, `biilingCity`, `billingState`, `billingPincode`, `billingCountry`, `shippingAddress`, `shippingCity`, `shippingState`, `shippingPincode`, `shippingCountry`, `postingDate`) VALUES
 (6, 10, 'The Arc @ Cyberjaya Blocks C & D, Persiaran Bestari, Cyber 11,', 'Cyberjaya', 'Selangor', 63000, 'Malaysia', 'The Arc @ Cyberjaya Blocks C & D, Persiaran Bestari, Cyber 11,', 'Cyberjaya', 'Selangor', 63000, 'Malaysia', '2023-06-20 10:50:44'),
 (7, 12, '96-11-12kampung limau jalan pantai dalam', 'w.p', 'Kuala Lumpur', 59200, 'Malaysia', '96-11-12kampung limau jalan pantai dalam', 'w.p', 'Kuala Lumpur', 59200, 'Malaysia', '2023-06-27 14:05:39'),
-(10, 18, 'The Arc @ Cyberjaya Blocks C & D, Persiaran Bestari, Cyber 11,', 'Cyberjaya', 'Selangor', 63000, 'Malaysia', 'The Arc @ Cyberjaya Blocks C & D, Persiaran Bestari, Cyber 11,', 'Cyberjaya', 'Selangor', 63000, 'Malaysia', '2023-07-12 06:23:04');
+(10, 18, 'The Arc @ Cyberjaya Blocks C & D, Persiaran Bestari, Cyber 11,', 'Cyberjaya', 'Selangor', 63000, 'Malaysia', 'The Arc @ Cyberjaya Blocks C & D, Persiaran Bestari, Cyber 11,', 'Cyberjaya', 'Selangor', 63000, 'Malaysia', '2023-07-12 06:23:04'),
+(11, 11, 'No.10, Jalan 12, Taman Perdana', 'Nilai', 'Negeri Sembilan', 71800, 'Malaysia', 'No.10, Jalan 12, Taman Perdana', 'Nilai', 'Negeri Sembilan', 71800, 'Malaysia', '2024-01-13 18:12:07'),
+(12, 19, 'No.23, Jalan 15, Taman Nilai Perdana,', 'Nilai', 'Negeri Sembilan', 71800, 'Malaysia', 'No.23, Jalan 15, Taman Nilai Perdana,', 'Nilai', 'Negeri Sembilan', 71800, 'Malaysia', '2024-01-13 18:17:43'),
+(13, 20, 'No.5, Jalan 7, Taman Impian', 'Shah Alam', 'Selangor', 42000, 'Malaysia', 'No.5, Jalan 7, Taman Impian', 'Shah Alam', 'Selangor', 42000, 'Malaysia', '2024-01-13 18:20:09'),
+(14, 21, 'No.9, Jalan 13, Taman Indah,', 'Bagan Serai', 'Perak', 34300, 'Malaysia', 'No.9, Jalan 13, Taman Indah,', 'Bagan Serai', 'Perak', 34300, 'Malaysia', '2024-01-13 18:22:23'),
+(15, 22, 'No. 8, Aras 3, Blok 7,', 'Subang Jaya', 'Selangor', 40300, 'Malaysia', 'No. 8, Aras 3, Blok 7,', 'Subang Jaya', 'Selangor', 40300, 'Malaysia', '2024-01-13 18:25:00'),
+(16, 23, 'No.8, Jalan 14, Taman Melur,', 'Petaling Jaya', 'Selangor', 46000, 'Malaysia', 'No.8, Jalan 14, Taman Melur,', 'Petaling Jaya', 'Selangor', 46000, 'Malaysia', '2024-01-13 18:27:19'),
+(17, 24, '54, F16, Blok 3,', 'Putrajaya', 'WP Putrajaya', 62000, 'Malaysia', '54, F16, Blok 3,', 'Putrajaya', 'WP Putrajaya', 62000, 'Malaysia', '2024-01-13 18:30:06');
 
 -- --------------------------------------------------------
 
@@ -109,6 +116,24 @@ CREATE TABLE `orders` (
   `orderDate` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`id`, `orderNumber`, `userId`, `addressId`, `totalAmount`, `txnType`, `txnNumber`, `orderStatus`, `orderDate`) VALUES
+(21, 457660706, 11, 11, 108.00, 'Internet Banking', '12345', 'In Transit', '2024-01-13 18:12:34'),
+(22, 861126983, 18, 10, 98.00, 'Internet Banking', '12345', 'Out For Delivery', '2024-01-13 18:15:56'),
+(23, 608014363, 19, 12, 99.00, 'Debit/Credit Card', '12345', 'Packed', '2024-01-13 18:17:55'),
+(24, 800921729, 20, 13, 94.00, 'Internet Banking', '12345', 'Dispatched', '2024-01-13 18:20:16'),
+(25, 710019161, 21, 14, 218.00, 'Cash on Delivery', '', 'In Transit', '2024-01-13 18:22:31'),
+(26, 250284995, 22, 15, 69.00, 'Internet Banking', '12345', 'Packed', '2024-01-13 18:25:09'),
+(27, 837124083, 23, 16, 177.00, 'Cash on Delivery', '', 'Delivered', '2024-01-13 18:27:28'),
+(28, 499213505, 24, 17, 203.00, 'Debit/Credit Card', '12345', 'Dispatched', '2024-01-13 18:30:16'),
+(29, 282896420, 11, 11, 99.00, 'Internet Banking', '12345', NULL, '2024-01-13 18:31:20'),
+(30, 738821194, 18, 10, 69.00, 'Debit/Credit Card', '12345', NULL, '2024-01-13 18:32:04'),
+(31, 908026702, 22, 15, 25.00, 'Debit/Credit Card', '12345', 'Cancelled', '2024-01-13 18:47:04'),
+(32, 456072749, 23, 16, 109.00, 'e-Wallet', '12345', 'Cancelled', '2024-01-13 18:48:56');
+
 -- --------------------------------------------------------
 
 --
@@ -125,6 +150,29 @@ CREATE TABLE `ordersdetails` (
   `orderStatus` varchar(55) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
+--
+-- Dumping data for table `ordersdetails`
+--
+
+INSERT INTO `ordersdetails` (`id`, `orderNumber`, `userId`, `productId`, `quantity`, `orderDate`, `orderStatus`) VALUES
+(25, 457660706, 11, 89, 1, '2024-01-13 18:12:34', NULL),
+(26, 457660706, 11, 87, 1, '2024-01-13 18:12:34', NULL),
+(28, 861126983, 18, 69, 2, '2024-01-13 18:15:56', NULL),
+(29, 608014363, 19, 88, 1, '2024-01-13 18:17:55', NULL),
+(30, 800921729, 20, 74, 1, '2024-01-13 18:20:16', NULL),
+(31, 800921729, 20, 72, 1, '2024-01-13 18:20:16', NULL),
+(33, 710019161, 21, 83, 1, '2024-01-13 18:22:31', NULL),
+(34, 710019161, 21, 87, 1, '2024-01-13 18:22:31', NULL),
+(36, 250284995, 22, 84, 1, '2024-01-13 18:25:10', NULL),
+(37, 837124083, 23, 71, 3, '2024-01-13 18:27:28', NULL),
+(38, 499213505, 24, 81, 1, '2024-01-13 18:30:16', NULL),
+(39, 499213505, 24, 84, 1, '2024-01-13 18:30:16', NULL),
+(40, 499213505, 24, 70, 1, '2024-01-13 18:30:16', NULL),
+(41, 282896420, 11, 88, 1, '2024-01-13 18:31:20', NULL),
+(42, 738821194, 18, 84, 1, '2024-01-13 18:32:04', NULL),
+(43, 908026702, 22, 72, 1, '2024-01-13 18:47:04', NULL),
+(44, 456072749, 23, 86, 1, '2024-01-13 18:48:56', NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -140,6 +188,23 @@ CREATE TABLE `ordertrackhistory` (
   `postingDate` timestamp NOT NULL DEFAULT current_timestamp(),
   `canceledBy` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `ordertrackhistory`
+--
+
+INSERT INTO `ordertrackhistory` (`id`, `orderId`, `status`, `remark`, `actionBy`, `postingDate`, `canceledBy`) VALUES
+(19, 21, 'In Transit', 'In transit to delivery hub', 1, '2024-01-13 18:35:08', NULL),
+(20, 22, 'Out For Delivery', 'Out for delivery by courier', 1, '2024-01-13 18:35:44', NULL),
+(21, 23, 'Packed', 'Packing process at warehouse', 1, '2024-01-13 18:36:06', NULL),
+(22, 24, 'Dispatched', 'Delivered to our courier', 1, '2024-01-13 18:37:22', NULL),
+(23, 25, 'In Transit', 'In transit to delivery hub', 1, '2024-01-13 18:37:39', NULL),
+(24, 31, 'Cancelled', 'Wrong Size', 1, '2024-01-13 18:49:59', ' Admin'),
+(25, 32, 'Cancelled', 'Wrong Item', 1, '2024-01-13 18:50:12', ' Admin'),
+(26, 26, 'Packed', 'Packing process at warehouse', 1, '2024-01-13 18:51:13', NULL),
+(27, 27, 'In Transit', 'In transit to delivery hub', 1, '2024-01-13 18:51:34', NULL),
+(28, 28, 'Dispatched', 'Delivered to our courier', 1, '2024-01-13 18:51:51', NULL),
+(29, 27, 'Delivered', 'Successfully delivered to customer', 1, '2024-01-13 18:52:54', NULL);
 
 -- --------------------------------------------------------
 
@@ -240,7 +305,7 @@ CREATE TABLE `tbladmin` (
 --
 
 INSERT INTO `tbladmin` (`id`, `username`, `password`, `contactNumber`, `creationDate`, `updationDate`) VALUES
-(1, 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 45231025890, '2022-01-24 16:21:18', '2023-06-20 10:15:12');
+(1, 'admin', '827ccb0eea8a706c4c34a16891f84e7b', 183152142, '2022-01-24 16:21:18', '2024-01-13 18:53:21');
 
 -- --------------------------------------------------------
 
@@ -263,11 +328,14 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `contactno`, `password`, `regDate`, `updationDate`) VALUES
-(10, 'Syaza Yusof', 'syaza123@gmail.com', 123456789, 'abbabf1a907ec8f2773e2ef79ef81e47', '2023-06-20 10:31:11', NULL),
-(11, 'Aiman Daniel', 'aimandaniel545@gmail.com', 43743247367, '24775f4c046499d6494654258352495a', '2023-06-21 07:13:00', NULL),
-(12, 'muhammad izzuddin bin saidan', 'izzuddin@gmail.com', 1121234371, 'd8578edf8458ce06fbc5bb76a58c5ca4', '2023-06-27 13:15:04', NULL),
-(13, 'NURUL HUDA BINTI ABDUL RAHIM', 'shahril@gmail.com', 1234567890, 'd8578edf8458ce06fbc5bb76a58c5ca4', '2023-07-06 00:25:01', NULL),
-(18, 'Sara Maya', 'saramaya@gmail.com', 123456789, '827ccb0eea8a706c4c34a16891f84e7b', '2023-07-12 06:20:19', NULL);
+(11, 'Aiman Daniel', 'aimandaniel@gmail.com', 43743247367, '827ccb0eea8a706c4c34a16891f84e7b', '2023-06-21 07:13:00', '2024-01-13 17:34:49'),
+(18, 'Sara Maya', 'saramaya@gmail.com', 123456789, '827ccb0eea8a706c4c34a16891f84e7b', '2023-07-12 06:20:19', NULL),
+(19, 'Azfar Fahmi', 'azfarfahmi@gmail.com', 1139951540, '827ccb0eea8a706c4c34a16891f84e7b', '2024-01-13 17:32:38', NULL),
+(20, 'Sharifah Syafiqah', 'sharifahsyafiqah@gmail.com', 176872572, '827ccb0eea8a706c4c34a16891f84e7b', '2024-01-13 17:52:49', NULL),
+(21, 'Aqil Rashid', 'aqilrashid@gmail.com', 183653756, '827ccb0eea8a706c4c34a16891f84e7b', '2024-01-13 18:03:57', NULL),
+(22, 'Sabrina Wong', 'sabrinawong@gmail.com', 133546735, '827ccb0eea8a706c4c34a16891f84e7b', '2024-01-13 18:04:20', NULL),
+(23, 'Ikhmal Fakhri', 'ikhmalfakhri@gmail.com', 135837538, '827ccb0eea8a706c4c34a16891f84e7b', '2024-01-13 18:04:46', NULL),
+(24, 'Adriana Azman', 'adrianaazman@gmail.com', 164353788, '827ccb0eea8a706c4c34a16891f84e7b', '2024-01-13 18:05:23', NULL);
 
 -- --------------------------------------------------------
 
@@ -281,6 +349,22 @@ CREATE TABLE `wishlist` (
   `productId` int(11) DEFAULT NULL,
   `postingDate` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+
+--
+-- Dumping data for table `wishlist`
+--
+
+INSERT INTO `wishlist` (`id`, `userId`, `productId`, `postingDate`) VALUES
+(32, 11, 71, '2024-01-13 18:07:34'),
+(34, 18, 77, '2024-01-13 18:15:25'),
+(35, 19, 86, '2024-01-13 18:17:10'),
+(36, 20, 79, '2024-01-13 18:18:30'),
+(37, 21, 75, '2024-01-13 18:21:25'),
+(38, 22, 76, '2024-01-13 18:23:05'),
+(39, 22, 73, '2024-01-13 18:23:14'),
+(40, 23, 78, '2024-01-13 18:26:13'),
+(41, 24, 79, '2024-01-13 18:28:28'),
+(42, 24, 77, '2024-01-13 18:28:35');
 
 --
 -- Indexes for dumped tables
@@ -375,13 +459,13 @@ ALTER TABLE `wishlist`
 -- AUTO_INCREMENT for table `addresses`
 --
 ALTER TABLE `addresses`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=79;
 
 --
 -- AUTO_INCREMENT for table `category`
@@ -393,19 +477,19 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `ordersdetails`
 --
 ALTER TABLE `ordersdetails`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `ordertrackhistory`
 --
 ALTER TABLE `ordertrackhistory`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -429,13 +513,13 @@ ALTER TABLE `tbladmin`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `wishlist`
 --
 ALTER TABLE `wishlist`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

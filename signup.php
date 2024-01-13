@@ -31,7 +31,7 @@ echo "<script>alert('Not register something went worng');</script>";
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Ayunae | Sign up</title>
+        <title>BungaBoulevard | Sign up</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/bblogo.png" />
         <!-- Custom icons-->
@@ -65,9 +65,9 @@ error:function (){}
             <div class="card card-outline card-primary" style="margin: 14%; padding: 5%; border: 2px solid #b76e79; border-radius: 15px; box-shadow: 0px 0px 5px #b76e79;">
                 <div class="card-body" style=" height: 450px;">
                 <br>
-                <h3 class="login-box-msg" style="text-align: left;">Discover the Essence <br>
-                    of Elegance with Ayunae, <br>
-                    Embrace Your Style.
+                <h3 class="login-box-msg" style="text-align: left;">Discover the Fusion <br>
+                    of Comfort & Trendy, <br>
+                    Embrace Your Style Today.
                 </h3>
                 <br>
                 <form method="post" name="signup">

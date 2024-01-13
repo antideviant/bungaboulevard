@@ -7,7 +7,7 @@
                     Experience the fusion of trendy style and casual comfort.
                 </p>
             </div>
-            <div class="col-lg-4 text-brown">
+            <div class="col-lg-4 text-brown" style="margin-left: 60px;">
                 <h5 style="font-weight: bold; font-family: 'Poppins', sans-serif;">Follow Us</h5>
                 <div style="display: flex; align-items: center;">
                     <a href="https://wa.me/0183356057?text=id%20like%20to%20%20make%20a%20purchase" style="margin-right: 10px;">
@@ -21,7 +21,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 text-brown">
+            <div class="col-lg-4 col-md-6 text-brown" style="margin-left: -70px;">
                 <h5 style="font-weight: bold; font-family: 'Poppins', sans-serif;">Customer Services</h5>
                 <p>
                     <img src="assets/icon/time.png" alt="Business Time" style="height: 20px; width: 20px; margin-right: 5px;">

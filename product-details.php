@@ -84,7 +84,7 @@ $catid=$row['catid'];
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                 <div class="col-md-6">
-                  <img class="card-img-top mb-5 mb-md-0" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" alt="<?php echo htmlentities($row['productName']);?>" width="950%" style="border: solid 1px #000; max-height: 560px; object-fit: cover;">
+                  <img class="card-img-top mb-5 mb-md-0" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" alt="<?php echo htmlentities($row['productName']);?>" width="950%" style="border: solid 1px #000; max-height: 800px; object-fit: cover;">
                   <div class="d-flex justify-content-between mt-3">
                       <img src="admin/productimages/<?php echo htmlentities($row['productImage2']);?>" width="48%" style="border: solid 1px #000; object-fit: cover;">
                       <img src="admin/productimages/<?php echo htmlentities($row['productImage3']);?>" width="48%" style="border: solid 1px #000; object-fit: cover;">
@@ -165,7 +165,7 @@ while($row=mysqli_fetch_array($query))
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" alt="<?php echo htmlentities($row['productName']);?>" width="350" height="350"/>
+                            <img class="card-img-top" src="admin/productimages/<?php echo htmlentities($row['productImage1']);?>" alt="<?php echo htmlentities($row['productName']);?>" width="350" height="370"/>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">

@@ -135,7 +135,7 @@ error_reporting(0);
     <!-- Header Section -->
     <header class="header-section">
         <div class="container px-4 px-lg-5 my-5">
-            <h1 class="display-4 fw-bolder">Contact Us</h1>
+            <h1 class="display-4 fw-bolder">Contact Us</h1><br>
             <h5 class="display-10">Fusion brand | Comfort & Versatility</h5>
         </div>
     </header>

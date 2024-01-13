@@ -77,7 +77,7 @@ while($row=mysqli_fetch_array($query))
                                             <td><?php echo htmlentities($row['orderDate']);?></td>
                                             <td><?php echo htmlentities($row['orderStatus']);?></td>
                                             <td>
-                                            <a href="order-details.php?orderid=<?php echo $row['id']?>" target="_blank">
+                                            <a href="order-details.php?orderid=<?php echo $row['id']?>">
                                                 <i class="fas fa-file fa-2x pink-icon" title="View Order Details"></i>
                                             </a>
                                         <?php $cnt=$cnt+1; } ?>

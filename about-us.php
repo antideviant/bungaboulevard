@@ -85,65 +85,64 @@ error_reporting(0);
                 </div>
             </div>
             <div class="indicators" id="indicators"></div>
-        </div>
+            <script>
+                const imageSources = [
+                    "assets/aboutus1.jpg",
+                    "assets/aboutus2.jpg",
+                    "assets/aboutus3.jpg",
+                    "assets/aboutus4.jpg",
+                    "assets/aboutus5.jpg",
+                    "assets/aboutus6.jpg",
+                    // Add more image paths as needed
+                ];
+
+                let currentImageIndex = 0;
+                const aboutUsImage = document.getElementById("aboutUsImage");
+                const indicatorsContainer = document.getElementById("indicators");
+
+                // Create indicators based on the number of images
+                for (let i = 0; i < imageSources.length; i++) {
+                    const indicator = document.createElement("div");
+                    indicator.classList.add("indicator");
+                    indicator.setAttribute("data-index", i);
+                    indicatorsContainer.appendChild(indicator);
+                }
+
+                const indicators = document.querySelectorAll(".indicator");
+
+                // Set the first indicator as active initially
+                indicators[currentImageIndex].classList.add("active");
+
+                // Function to change image and update indicators
+                function changeImage(index) {
+                    currentImageIndex = index;
+                    aboutUsImage.src = imageSources[currentImageIndex];
+
+                    // Update indicators
+                    indicators.forEach((indicator, i) => {
+                        if (i === currentImageIndex) {
+                            indicator.classList.add("active");
+                        } else {
+                            indicator.classList.remove("active");
+                        }
+                    });
+                }
+
+                // Add click event listeners to indicators
+                indicators.forEach((indicator, i) => {
+                    indicator.addEventListener("click", () => {
+                        changeImage(i);
+                    });
+                });
+
+                // Automatic image sliding every 5 seconds
+                setInterval(() => {
+                    currentImageIndex = (currentImageIndex + 1) % imageSources.length;
+                    changeImage(currentImageIndex);
+                }, 3000);
+            </script><br><br><br><br>
+        </div><br><br>
     </section>
-
-    <script>
-    const imageSources = [
-        "assets/aboutus1.jpg",
-        "assets/aboutus2.jpg",
-        "assets/aboutus3.jpg",
-        "assets/aboutus4.jpg",
-        "assets/aboutus5.jpg",
-        "assets/aboutus6.jpg",
-        // Add more image paths as needed
-    ];
-
-    let currentImageIndex = 0;
-    const aboutUsImage = document.getElementById("aboutUsImage");
-    const indicatorsContainer = document.getElementById("indicators");
-
-    // Create indicators based on the number of images
-    for (let i = 0; i < imageSources.length; i++) {
-        const indicator = document.createElement("div");
-        indicator.classList.add("indicator");
-        indicator.setAttribute("data-index", i);
-        indicatorsContainer.appendChild(indicator);
-    }
-
-    const indicators = document.querySelectorAll(".indicator");
-
-    // Set the first indicator as active initially
-    indicators[currentImageIndex].classList.add("active");
-
-    // Function to change image and update indicators
-    function changeImage(index) {
-        currentImageIndex = index;
-        aboutUsImage.src = imageSources[currentImageIndex];
-
-        // Update indicators
-        indicators.forEach((indicator, i) => {
-            if (i === currentImageIndex) {
-                indicator.classList.add("active");
-            } else {
-                indicator.classList.remove("active");
-            }
-        });
-    }
-
-    // Add click event listeners to indicators
-    indicators.forEach((indicator, i) => {
-        indicator.addEventListener("click", () => {
-            changeImage(i);
-        });
-    });
-
-    // Automatic image sliding every 5 seconds
-    setInterval(() => {
-        currentImageIndex = (currentImageIndex + 1) % imageSources.length;
-        changeImage(currentImageIndex);
-    }, 3000);
-</script><br>
 
 <!-- Footer-->
    <?php include_once('includes/footer.php'); ?>
