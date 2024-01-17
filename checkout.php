@@ -67,7 +67,7 @@ if(isset($_POST['proceedpayment'])){
         <style type="text/css">
             /* Add this CSS to reduce the space */
             section.py-5 {
-                margin-top: -4rem;
+                margin-top: -6rem;
                 padding-top: 0;
             }
 
@@ -91,7 +91,7 @@ if(isset($_POST['proceedpayment'])){
         
     <!-- Header-->
         <?php include_once('includes/header.php');?>
-        <header class="py-5">
+        <header class="py-4">
                 <div class="text-center text-white">
                     <h1 class="display-4 fw-bolder" style="color: #cf8d88;">Checkout</h1>
                 </div>
