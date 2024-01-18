@@ -131,7 +131,7 @@ while ($row=mysqli_fetch_array($ret)) {
     <tr>
                     <td colspan="7" style="text-align:right;">
 <a href="shop-categories.php" class="btn-upper btn btn1">Continue Shopping</a>
-                        <a href="checkout.php" class="btn-upper btn btn2">Procced for Checkout</a></td>
+                        <a href="checkout.php" class="btn-upper btn btn2">Proceed for Checkout</a></td>
                 </tr>
                 <?php } else{ ?>
                 <tr>
