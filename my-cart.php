@@ -108,20 +108,20 @@ echo "<script type='text/javascript'> document.location ='my-cart.php'; </script
 
                             ?>
                                 <tr>
-                                    <td class="col-md-2" style="width: 15%; text-align:center;"><img src="admin/productimages/<?php echo htmlentities($row['pimage']);?>" alt="<?php echo htmlentities($row['pname']);?>" width="100" height="130"></td>
-                                    <td style="width: 25%; text-align:center;">
+                                    <td class="col-md-2" style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 15%; text-align:center;"><img src="admin/productimages/<?php echo htmlentities($row['pimage']);?>" alt="<?php echo htmlentities($row['pname']);?>" width="100" height="130"></td>
+                                    <td style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 25%; text-align:center;">
                                         <a href="product-details.php?pid=<?php echo htmlentities($pd=$row['pid']);?>"><?php echo htmlentities($row['pname']);?></a>
                                     </td>
-                                    <td style="width: 10%; text-align:center;">
+                                    <td style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 10%; text-align:center;">
                                         <span><?php echo htmlentities($row['proisz']);?></span>
                                     </td>
-                                    <td style="width: 20%; text-align:center;">
+                                    <td style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 20%; text-align:center;">
                                         <span class="text-decoration-line-through">RM<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span><br>
                                         <span>RM<?php echo htmlentities($row['pprice']);?></span> 
                                     </td>
-                                    <td style="width: 10%; text-align:center;"><?php echo htmlentities($row['productQty']);?></td>
-                                    <td style="width: 20%; text-align:center;">RM<?php echo htmlentities($row['productQty']*$row['pprice']);?>.00</td>
-                                    <td style="width: 10%; text-align:center;">
+                                    <td style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 10%; text-align:center;"><?php echo htmlentities($row['productQty']);?></td>
+                                    <td style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 20%; text-align:center;">RM<?php echo htmlentities($row['productQty']*$row['pprice']);?>.00</td>
+                                    <td style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 10%; text-align:center;">
                                         <a href="my-cart.php?del=<?php echo htmlentities($row['cartid']);?>" onClick="return confirm('Are you sure you want to delete?')" class="btn-upper btn btn3">Delete</a>
                                     </td>
                                 </tr>
