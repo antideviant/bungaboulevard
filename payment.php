@@ -81,45 +81,47 @@ echo "<script>alert('Something went wrong. Please try again');</script>";
     <body>
         
 <?php include_once('includes/header.php');?>
-        <!-- Header-->
-        <header class="py-5">
-                <div class="text-center font-color:pink;">
-                    <h1 class="mt-4"><strong><span class="pink-text">Payment</span></strong></h1>
+        <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-12 col-xl-6">
+                <div class="card shadow-lg o-hidden border-0 my-5">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-lg-6 col-xl-12">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <h2 class="text-dark mb-4" style="text-align: center; font-color:pink;"><strong><span style="color: #A52A2A;">Payment</span></strong></h2>
+                                    </div>
+                                    <form method="post" name="signup">
+                                        <div class="mb-3">
+                                            <label class="form-label">Total Payment</label>
+                                            <input input type="text" name="totalamount" value="RM <?php echo $_SESSION['gtotal'];?>" class="form-control" readonly>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Payment Type</label>
+                                            <select class="form-control" name="paymenttype" id="paymenttype" required>
+                                                <option value="">Select</option>
+                                                <option value="e-Wallet">E-Wallet</option>
+                                                <option value="Internet Banking">Internet Banking</option>
+                                                <option value="Debit/Credit Card">Debit/Credit Card</option>
+                                                <option value="Cash on Delivery">Cash on Delivery (COD)</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3" id="txnno">
+                                            <div class="col-4">Transaction Number</div>
+                                            <div class="col4"><input type="text" name="txnnumber" id="txnnumber" class="form-control" maxlength="50"></div>
+                                        </div>
+                                        <br>
+                                        <input type="submit" name="submit" id="submit" class="btn btn-primary d-block btn-user w-100" value="Submit" style="background: #cf8d88; border-color: #000000;" required>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-        </header>
-        
-        <!-- Section-->
-        <section class="py-5">
-            <div class="container px-4  mt-5">
-     
-            <form method="post" name="signup">
-    <div class="row justify-content-center">
-        <div class="col-2 text-center">Total Payment</div>
-        <div class="col-4"><input type="text" name="totalamount" value="RM <?php echo $_SESSION['gtotal'];?>" class="form-control" readonly></div>
-    </div>
-    <div class="row mt-3 justify-content-center">
-        <div class="col-2 text-center">Payment Type</div>
-        <div class="col-4">
-            <select class="form-control" name="paymenttype" id="paymenttype" required>
-                <option value="">Select</option>
-                <option value="e-Wallet">E-Wallet</option>
-                <option value="Internet Banking">Internet Banking</option>
-                <option value="Debit/Credit Card">Debit/Credit Card</option>
-                <option value="Cash on Delivery">Cash on Delivery (COD)</option>
-            </select>
+            </div>
         </div>
     </div>
-    <div class="row mt-3 justify-content-center" id="txnno">
-        <div class="col-2 text-center">Transaction Number</div>
-        <div class="col-4"><input type="text" name="txnnumber" id="txnnumber" class="form-control" maxlength="50"></div>
-    </div><br>
-    <div class="row mt-3 justify-content-center">
-        <div class="col-6 text-center"><input type="submit" name="submit" id="submit" class="btn btn-primary btn2" value="Submit" required></div>
-    </div>
-</form>
-
-</div>
-        </section>
         <!-- Footer-->
    <?php include_once('includes/footer.php'); ?>
         <!-- Custom core JS-->
