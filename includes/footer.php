@@ -19,7 +19,7 @@
                         <img src="assets/icon/fb.png" style="height: 30px; width: 55px;">
                     </a>
                     <a href="https://www.instagram.com/bungaboulevard.co/">
-                        <img src="assets/icon/ig.png" style="height: 30px; width: 40px;">
+                        <img src="assets/icon/instagram.png" style="height: 30px; width: 30px;">
                     </a>
                 </div>
             </div>
