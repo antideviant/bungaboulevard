@@ -49,61 +49,65 @@ exit();
 </style>
 <body>
     <?php include_once('includes/header.php');?>
-    <div class="container custom-container" style="padding: 10%; padding-top: 0; padding-bottom: 0;">
-        <div class="login-box">
-            <!-- /.login-logo -->
-            <div class="card card-outline card-primary" style="margin: 14%; padding: 5%; border: 2px solid #c28163; border-radius: 15px; box-shadow: 0px 0px 5px #c28163;">
-                <div class="card-body">
-                <br>
-                <h3 class="login-box-msg" style="text-align: left;">Login now,<br>
-                    Discover and <a href="admin/index.php" style="text-decoration:none; color:#000">Embrace</a><br>
-                    Your Unique Style.
-                </h3>
-                <br>
-                <form method="post" name="login">
-                    <div class="input-group mb-3">
-                        <label for="email" class="input-group-text" style="width: 95px;">E-mail</label>
-                        <input type="email" class="form-control" name="emailid" placeholder="Please enter your e-mail" required>
-                        <span id="user-email-status" style="font-size:12px;"></span>
-                    </div>
-                    <div class="input-group mb-3">
-                        <label for="password" class="input-group-text" style="width: 95px;">Password</label>
-                        <input type="password" class="form-control" name="inputuserpwd" placeholder="Please enter your password" required>
-                        <div class="input-group-append">
-                            <span class="input-group-text toggle-password" style="cursor: pointer;">
-                                <i class="far fa-eye"></i>
-                            </span>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-9 col-lg-12 col-xl-10">
+                <div class="card shadow-lg o-hidden border-0 my-5">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-lg-6 d-none d-lg-flex">
+                                <div class="flex-grow-1 bg-login-image" style="background: url(&quot;assets/bblogo.png&quot;) top / cover, #ece0d3;"></div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                <div class="text-center">
+                                    <h4 class="text-dark mb-4" style="text-align: left;">
+                                        <span style="color: rgb(33, 37, 41);">Login now,</span><br>
+                                        <span style="color: rgb(33, 37, 41);">Discover and</span>
+                                        <a href="http://localhost/bungaboulevard/admin/index.php" style="text-decoration: none; color: rgb(0, 0, 0);">
+                                            <span style="color: rgb(0, 0, 0);">Embrace</span>
+                                        </a><br>
+                                        <span style="color: rgb(33, 37, 41);">Your Unique Style.</span>
+                                    </h4>
+                                </div>
+                                    <form class="user" method="post" name="login">
+                                        <div class="mb-3">
+                                            <input class="form-control form-control-user" type="email" aria-describedby="emailHelp" placeholder="Please enter your e-mail" name="emailid">
+                                        </div>
+                                        <div class="mb-3 input-group">
+                                            <input class="form-control form-control-user" type="password" placeholder="Please enter your password" name="inputuserpwd">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text toggle-password" style="cursor: pointer;">
+                                                    <i class="far fa-eye"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <div class="custom-control custom-checkbox small">
+                                                <div class="form-check">
+                                                    <input class="form-check-input custom-control-input" type="checkbox" id="formCheck-1">
+                                                    <label class="form-check-label custom-control-label" for="formCheck-1">Remember Me</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary d-block btn-user w-100" id="login" name="login" type="submit" style="background: #c28163; border-color: #000000;">Login</button>
+                                        <br>
+                                        <a href="signup.php" class="btn btn-primary d-block btn-google btn-user w-100 mb-2" role="button" style="background: #b76e79; border-color: #000000;">Sign Up</a>
+                                        <hr>
+                                    </form>
+                                    <div class="text-center"><a class="small" style="color:#c28163" href="password-recovery.php">Forgot Password?</a></div>
+                                    <div class="col-12 mt-2 text-center">
+                                        <br><small>Are you admin? <a href="admin/index.php" style="color:#c28163">Log In</a> here!</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="d-flex justify-content-between">
-                        <div class="icheck-primary">
-                            <input type="checkbox" id="remember">
-                            <label for="remember">Remember Me</label>
-                        </div>
-                        <small><a href="password-recovery.php" style="color:#c28163">Forgot Password?</a></small>
-                    </div>
-
-                    <div class="row mt-3">
-                        <div class="col-6">
-                            <button type="submit" name="login" id="login" class="btn btn-info btn-block btn-lg btn1" value="Login">Log In</button>
-                        </div>
-                        <div class="col-6">
-                            <a href="signup.php" class="text-center btn btn-info btn-block btn-lg btn2">Sign Up</a>
-                        </div>
-                        <div class="col-12 mt-2 text-center">
-                            <br><small>Are you admin? <a href="admin/index.php" style="color:#c28163">Log In</a> here!</small>
-                        </div>
-                    </div>
-                    <br>
-                </form>
                 </div>
-                <!-- /.card-body -->
             </div>
-            <!-- /.card -->
         </div>
-        <!-- /.login-box -->
     </div>
+
     <!-- Footer-->
     <?php include_once('includes/footer.php'); ?>
     <!-- Custom core JS-->

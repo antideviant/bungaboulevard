@@ -59,55 +59,49 @@ error:function (){}
 <style type="text/css"></style>
     <body>
 <?php include_once('includes/header.php');?>
-    <div class="container custom-container" style="padding: 10%; padding-top: 0; padding-bottom: 0;">
-        <div class="login-box" style="margin: 4%">
-            <!-- /.login-logo -->
-            <div class="card card-outline card-primary" style="margin: 14%; padding: 5%; border: 2px solid #b76e79; border-radius: 15px; box-shadow: 0px 0px 5px #b76e79;">
-                <div class="card-body" style=" height: 450px;">
-                <br>
-                <h3 class="login-box-msg" style="text-align: left;">Discover the Fusion <br>
-                    of Comfort & Trendy, <br>
-                    Embrace Your Style Today.
-                </h3>
-                <br>
-                <form method="post" name="signup">
-                    <div class="input-group mb-3">
-                        <label for="fullname" class="input-group-text" style="width: 130px;">Full Name</label>
-                        <input type="text" class="form-control" name="fullname" placeholder="Please enter your full name" required>
+    <div class="container">
+        <div class="card shadow-lg o-hidden border-0 my-5">
+            <div class="card-body p-0">
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-flex">
+                        <div class="flex-grow-1 bg-register-image" style="background: url(&quot;assets/bblogo.png&quot;) top / cover, #ece0d3;"></div>
                     </div>
-                    <div class="input-group mb-3">
-                        <label for="contactnumber" class="input-group-text" style="width: 130px;">Phone Number</label>
-                        <input type="text" class="form-control" name="contactnumber" maxlength="11" placeholder="Please enter your phone number" required>
-                    </div>
-                    <div class="input-group mb-3">
-                        <label for="email" class="input-group-text" style="width: 130px;">E-Mail</label>
-                        <input type="email" class="form-control" name="emailid" placeholder="Please enter your e-mail" required>
-                        <span id="user-email-status" style="font-size:12px;"></span>
-                    </div>
-                    <div class="input-group mb-3">
-                        <label for="password" class="input-group-text" style="width: 130px;">Password</label>
-                        <input type="password" class="form-control" name="inputuserpwd" placeholder="Please enter your password" required>
-                        <div class="input-group-append">
-                            <span class="input-group-text toggle-password" style="cursor: pointer;">
-                                <i class="far fa-eye"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="row mt-3">
-                        <div class="col-12 text-center">
-                            <div style="margin-top: 1rem;">
-                                <button type="submit" name="submit" id="submit" class="btn btn-info btn-block btn-lg btn1" value="Login">Sign Up</button>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h4 class="text-dark mb-4" style="text-align: left;"><span style="color: rgb(33, 37, 41);">Discover the Fusion</span><br><span style="color: rgb(33, 37, 41);">of Comfort &amp; Trendy,</span><br><span style="color: rgb(33, 37, 41);">Embrace Your Style Today.</span></h4>
                             </div>
+                            <form method="post" name="signup">
+                                <div class="mb-3">
+                                    <label class="form-label">Fullname</label>
+                                    <input type="text" class="form-control" name="fullname" placeholder="Please enter your full name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="text" class="form-control" name="contactnumber" maxlength="11" placeholder="Please enter your phone number" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" name="emailid" placeholder="Please enter your e-mail" required>
+                                </div>
+                                <label class="form-label">Password</label>
+                                <div class="mb-3 input-group">
+                                    <input type="password" class="form-control" name="inputuserpwd" placeholder="Please enter your password" required>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text toggle-password" style="cursor: pointer;">
+                                            <i class="far fa-eye"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <br>
+                                <button class="btn btn-primary d-block btn-user w-100" style="background-color:#b76e79; border-color: #000000;" type="submit" name="submit" id="submit">Signup</button>
+                            </form>
+                            <div class="text-center"></div>
                         </div>
                     </div>
-                    <br>
-                </form>
                 </div>
-                <!-- /.card-body -->
             </div>
-            <!-- /.card -->
         </div>
-        <!-- /.login-box -->
     </div>
         <!-- Footer-->
    <?php include_once('includes/footer.php'); ?>
