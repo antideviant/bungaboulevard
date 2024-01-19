@@ -1,15 +1,17 @@
 <footer class="py-5 bg-brown">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-4 text-brown">
+        <div class="row justify-content-between">
+
+            <div class="col-lg-3 text-brown">
                 <h5 style="font-weight: bold; font-family: 'Poppins', sans-serif;">BungaBoulevard</h5>
                 <p style="text-align: justify; font-family: 'Poppins', sans-serif;">
                     Discover the perfect blend of fashion.
-                    <br>Elevate style with trendy collections. 
+                    <br>Elevate style with trendy collections.
                     <br>Embrace lifestyle where meets style.
                 </p>
             </div>
-            <div class="col-lg-4 text-brown" style="margin-left: 60px;">
+
+            <div class="col-lg-3 text-brown">
                 <h5 style="font-weight: bold; font-family: 'Poppins', sans-serif;">Follow Us</h5>
                 <div style="display: flex; align-items: center;">
                     <a href="https://wa.me/0183356057?text=id%20like%20to%20%20make%20a%20purchase" style="margin-right: 10px;">
@@ -23,11 +25,22 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 text-brown" style="margin-left: -70px;">
-                <h5 style="font-weight: bold; font-family: 'Poppins', sans-serif;">Customer Services</h5>
+
+            <div class="col-lg-3 text-brown">
+                <h5 style="font-weight: bold; font-family: 'Poppins', sans-serif;">Quick Links</h5>
+                <ul style="list-style-type: none; padding: 0;">
+                    <li><a href="index.php" style="color: brown;">Home</a></li>
+                    <li><a href="product.php" style="color: brown;">Shop</a></li>
+                    <li><a href="about-us.php" style="color: brown;">About Us</a></li>
+                    <li><a href="contact-us.php" style="color: brown;">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 text-brown">
+                <h5 style="font-weight: bold; font-family: 'Poppins', sans-serif;">About BungaBoulevard</h5>
                 <p>
                     <img src="assets/icon/time.png" alt="Business Time" style="height: 20px; width: 20px; margin-right: 5px;">
-                    Monday - Saturday (8 A.M. - 8 P.M.)
+                    Monday - Friday (10 A.M - 8 P.M)
                 </p>
                 <p>
                     <a href="mailto:bungaboulevard@gmail.com" style="text-decoration: none; color: inherit; font-family: 'Poppins', sans-serif;">
@@ -42,6 +55,7 @@
                     </a>
                 </p>
             </div>
+
         </div>
         <hr class="text-brown" style="border-color: #c28163;">
         <p class="m-0 text-center text-brown" style="font-family: 'Poppins', sans-serif;">Copyright 2023 © BungaBoulevard.co</p>
@@ -59,8 +73,8 @@
         justify-content: space-between;
     }
 
-    footer .col-lg-4 {
-        flex-basis: calc(33.33% - 20px);
+    footer .col-lg-3 {
+        flex-basis: calc(25% - 20px);
         margin-bottom: 20px;
     }
 
