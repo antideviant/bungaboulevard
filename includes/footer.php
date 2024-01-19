@@ -25,10 +25,10 @@
             <div class="col-lg-3 text-brown">
                 <h5 style="font-weight: bold; font-family: 'Poppins', sans-serif;">Quick Links</h5>
                 <ul style="list-style-type: none; padding: 0;">
-                    <li><a href="index.php" style="color: brown;">Home</a></li>
-                    <li><a href="product.php" style="color: brown;">Shop</a></li>
-                    <li><a href="about-us.php" style="color: brown;">About Us</a></li>
-                    <li><a href="contact-us.php" style="color: brown;">Contact Us</a></li>
+                    <li><a href="index.php" style="color: brown; text-decoration: none;">Home</a></li>
+                    <li><a href="product.php" style="color: brown; text-decoration: none;">Shop</a></li>
+                    <li><a href="about-us.php" style="color: brown; text-decoration: none;">About Us</a></li>
+                    <li><a href="contact-us.php" style="color: brown; text-decoration: none;">Contact Us</a></li>
                 </ul>
             </div>
 
