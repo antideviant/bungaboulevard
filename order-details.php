@@ -19,6 +19,15 @@ if(strlen($_SESSION['id'])==0)
         <link href="css/custom-icons.css" rel="stylesheet" />
         <!-- Core theme CSS -->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+        <link rel="stylesheet" href="assets/css/Table-With-Search-search-table.css">
+        <link rel="stylesheet" href="assets/css/Table-With-Search.css">
+        
         <script src="js/jquery.min.js"></script>
         <script language="javascript" type="text/javascript">
             var popUpWin=0;
@@ -87,7 +96,7 @@ if(strlen($_SESSION['id'])==0)
         <section class="py-5">
             <div class="container px-4  mt-5">
                 <h3><strong>Order Details</strong></h3>
-                <hr />
+                <hr style="border: 1px solid">
                     <?php
                 $uid=$_SESSION['id'];
                 $orderno=intval($_GET['onumber']);
@@ -157,20 +166,22 @@ if(strlen($_SESSION['id'])==0)
 
                 </div>
                 <?php } ?>
+                <br>
                     <div class="table-responsive">
-                        <table class="table">
+                    <div class="col-md-12 search-table-col" style="width: 1250px;text-align: left;"><span class="counter pull-right"></span>
+                    <div class="table-responsive table table-hover table-bordered results">
+                        <table class="table table-hover table-bordered">
                             <thead>
-                                <tr>
-                                    <th colspan="4"><h3><strong>Order Products Details</strong></h3></th>
-                                </tr>
+                                   <h3><strong>Order Products Details</strong></h3>
                             </thead>
+                            <hr style="height: 1px;">
                             <tr>
                                 <thead>
-                                    <th><h5>Product</h5></th>
-                                    <th><h5>Product Name</h5></th>
-                                    <th><h5>Product Price</h5></th>
-                                    <th><h5>Quantity</h5></th>
-                                    <th><h5>Total Amount</h5></th>
+                                    <th id="trs-hd-1" class="col-lg-1" style="background: #ff9b94; width: 15%; text-align:center;"><h5>Product</h5></th>
+                                    <th id="trs-hd-2" class="col-lg-2" style="background: #ff9b94; width: 25%; text-align:center;"><h5>Product Name</h5></th>
+                                    <th id="trs-hd-4" class="col-lg-2" style="background: #ff9b94; width: 20%; text-align:center;"><h5>Product Price</h5></th>
+                                    <th id="trs-hd-5" class="col-lg-3" style="background: #ff9b94; width: 10%; text-align:center;"><h5>Quantity</h5></th>
+                                    <th id="trs-hd-6" class="col-lg-2" style="background: #ff9b94; width: 20%; text-align:center;"><h5>Total Amount</h5></th>
                                 </thead>
                             </tr>
                             <tbody>
@@ -184,22 +195,22 @@ if(strlen($_SESSION['id'])==0)
                 ?>
 
                                 <tr>
-                                    <td class="col-md-2"><img src="admin/productimages/<?php echo htmlentities($row['pimage']);?>" alt="<?php echo htmlentities($row['pname']);?>" width="100" height="170"></td>
-                                    <td>
+                                    <td class="col-md-2" style="width: 15%; text-align:center;"><img src="admin/productimages/<?php echo htmlentities($row['pimage']);?>" alt="<?php echo htmlentities($row['pname']);?>" width="120" height="170"></td>
+                                    <td style="width: 25%; text-align:center;">
                                     <a href="product-details.php?pid=<?php echo htmlentities($pd=$row['pid']);?>"><?php echo htmlentities($row['pname']);?></a></td>
-                <td>
+                <td style="width: 10%; text-align:center;">
                                         <span class="text-decoration-line-through">RM<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span>
                                             <span>RM<?php echo htmlentities($row['pprice']);?></span>
                                     </td>
-                                    <td><?php echo htmlentities($row['quantity']);?></td>
-                                    <td>RM<?php echo htmlentities($totalamount=$row['quantity']*$row['pprice']);?></td>
+                                    <td style="width: 10%; text-align:center;"><?php echo htmlentities($row['quantity']);?></td>
+                                    <td style="width: 20%; text-align:center;">RM<?php echo htmlentities($totalamount=$row['quantity']*$row['pprice']);?></td>
                         
                                 </tr>
                             
                                 <?php $grantotal+=$totalamount; } ?>
                 <tr>
-                    <th colspan="4"><h5><strong>Grand Total</strong></h5></th>
-                    <th colspan="2">RM<?php echo $grantotal;?></th>
+                    <th style="text-align:left;" colspan="4"><h5><strong>Grand Total</strong></h5></th>
+                    <th style="width: 10%; text-align:center;"colspan="2">RM<?php echo $grantotal;?></th>
                 </tr>
                                 <?php } else{ ?>
                                 <tr>
@@ -211,12 +222,9 @@ if(strlen($_SESSION['id'])==0)
                                 <?php } ?>
                             </tbody>
                         </table>
-                    </div>
-                            
-                            </div>
-
-                
+                    </div>     
                 </div>
+            </div>
         </section>
         <!-- Track Order Modal -->
 <div id="myModal" class="modal fade" role="dialog">
@@ -244,6 +252,12 @@ if(strlen($_SESSION['id'])==0)
         <script src="js/custom.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+                <!-- Custom core JS-->
+        <script src="js/custom.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/Table-With-Search-search-table.js"></script>
     </body>
 
 

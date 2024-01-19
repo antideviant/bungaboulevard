@@ -7,8 +7,6 @@ if($_SESSION['address']==0):
     echo "<script type='text/javascript'> document.location ='checkout.php'; </script>";
 endif;    
 
-
-
 //Order details
 if(isset($_POST['submit']))
 {
