@@ -4,7 +4,9 @@
             <div class="col-lg-4 text-brown">
                 <h5 style="font-weight: bold; font-family: 'Poppins', sans-serif;">BungaBoulevard</h5>
                 <p style="text-align: justify; font-family: 'Poppins', sans-serif;">
-                    Experience the fusion of trendy style and casual comfort.
+                    Discover the perfect blend of fashion.
+                    <br>Elevate style with trendy collections. 
+                    <br>Embrace lifestyle where meets style.
                 </p>
             </div>
             <div class="col-lg-4 text-brown" style="margin-left: 60px;">
