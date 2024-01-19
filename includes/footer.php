@@ -9,19 +9,15 @@
                     <br>Elevate style with trendy collections.
                     <br>Embrace lifestyle where meets style.
                 </p>
-            </div>
-
-            <div class="col-lg-3 text-brown">
-                <h5 style="font-weight: bold; font-family: 'Poppins', sans-serif;">Follow Us</h5>
                 <div style="display: flex; align-items: center;">
-                    <a href="https://wa.me/0183356057?text=id%20like%20to%20%20make%20a%20purchase" style="margin-right: 10px;">
-                        <img src="assets/icon/ws.png" style="height: 30px; width: 30px;">
+                    <a href="https://wa.me/0183356057?text=id%20like%20to%20%20make%20a%20purchase" style="margin-right: -2px;">
+                        <img src="assets/icon/ws.png" style="height: 25px; width: 25px;">
                     </a>
-                    <a href="https://www.facebook.com/bungaboulevard.co" style="margin-right: 10px;">
-                        <img src="assets/icon/fb.png" style="height: 30px; width: 55px;">
+                    <a href="https://www.facebook.com/bungaboulevard.co" style="margin-right: 2px;">
+                        <img src="assets/icon/fb.png" style="height: 25px; width: 55px;">
                     </a>
-                    <a href="https://www.instagram.com/bungaboulevard.co/">
-                        <img src="assets/icon/instagram.png" style="height: 30px; width: 30px;">
+                    <a href="https://www.instagram.com/bungaboulevard.co/" style="margin-right: 2px;">
+                        <img src="assets/icon/instagram.png" style="height: 25px; width: 25px;">
                     </a>
                 </div>
             </div>
