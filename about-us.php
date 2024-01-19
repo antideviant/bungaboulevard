@@ -19,6 +19,9 @@ error_reporting(0);
     <link href="css/custom-icons.css" rel="stylesheet" />
     <!-- Core theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
+     <!-- Core font CSS -->   
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
         .left-text,
         .right-text {
@@ -29,7 +32,7 @@ error_reporting(0);
             display: flex;
             align-items: center;
             padding: 2%;
-            font-family: Helvetica, Arial, sans-serif;
+            font-family: 'Poppins', Arial, sans-serif;
             position: relative;
         }
 
@@ -68,13 +71,13 @@ error_reporting(0);
         <div class="container px-4 px-lg-4 mt-4" style="background: #EADDCA;">
             <div class="container-1" style="max-height: 400px;">
                 <div class="left-text">
-                    <h1><b><p style="color: brown; font-size: 50px;">About Us</p></b></h1>
-                    <h5>Experience the fusion of<br>trendy style and casual<br>comfort. </h5>
+                    <h1><b><p style="color: brown; font-size: 50px; font-family: 'Poppins', sans-serif;">About Us</p></b></h1>
+                    <h5 style="font-family: 'Poppins', sans-serif;">Experience the fusion of<br>trendy style and casual<br>comfort. </h5>
                 </div>
-                    <div class="image" style="margin-top: 100px;">
-                        <img id="aboutUsImage" src="assets\aboutus1.jpg" alt="About Us Image">
+                <div class="image" style="margin-top: 100px;">
+                    <img id="aboutUsImage" src="assets\aboutus1.jpg" alt="About Us Image">
                 </div>
-                <div class="right-text" style="font-size: 15px; text-align: justify; margin-left: 50px; font-family: Poppins, Arial, sans-serif;">
+                <div class="right-text" style="font-size: 15px; text-align: justify; margin-left: 50px; font-family: 'Poppins', sans-serif;">
                     <p>We encourage you to fully immerse yourself in the dynamic world of fashion at BungaBoulevard,
                         where every click is an investigation of style and comfort.
                         Navigate through our chosen collections to <span style="color: brown;"><b> "Experience the fusion of trendy style and casual comfort"</b></span>,
@@ -135,11 +138,12 @@ error_reporting(0);
         </div><br><br>
     </section>
 
-<!-- Footer-->
-   <?php include_once('includes/footer.php'); ?>
-        <!-- Custom core JS-->
-        <script src="js/custom.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    <!-- Footer-->
+    <?php include_once('includes/footer.php'); ?>
+    <!-- Custom core JS-->
+    <script src="js/custom.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>

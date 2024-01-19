@@ -3,8 +3,8 @@
         <div class="row justify-content-between">
 
             <div class="col-lg-3 text-brown">
-                <h5 style="font-weight: bold; font-family: 'Poppins', sans-serif;">BungaBoulevard</h5>
-                <p style="text-align: justify; font-family: 'Poppins', sans-serif;">
+                <h5 style="font-weight: bold; font-family: 'Helvetica', sans-serif;">BungaBoulevard</h5>
+                <p style="text-align: justify; font-family: 'Helvetica', sans-serif;">
                     Discover the perfect blend of fashion.
                     <br>Elevate style with trendy collections.
                     <br>Embrace lifestyle where meets style.
@@ -23,29 +23,29 @@
             </div>
 
             <div class="col-lg-3 text-brown">
-                <h5 style="font-weight: bold; font-family: 'Poppins', sans-serif;">Quick Links</h5>
+                <h5 style="font-weight: bold; font-family: 'Helvetica', sans-serif;">Quick Links</h5>
                 <ul style="list-style-type: none; padding: 0;">
-                    <li><a href="index.php" style="color: brown; text-decoration: none;">Home</a></li>
-                    <li><a href="product.php" style="color: brown; text-decoration: none;">Shop</a></li>
-                    <li><a href="about-us.php" style="color: brown; text-decoration: none;">About Us</a></li>
-                    <li><a href="contact-us.php" style="color: brown; text-decoration: none;">Contact Us</a></li>
+                    <li><a href="index.php" style="color: brown; text-decoration: none; font-family: 'Helvetica', sans-serif;">Home</a></li>
+                    <li><a href="product.php" style="color: brown; text-decoration: none; font-family: 'Helvetica', sans-serif;">Shop</a></li>
+                    <li><a href="about-us.php" style="color: brown; text-decoration: none; font-family: 'Helvetica', sans-serif;">About Us</a></li>
+                    <li><a href="contact-us.php" style="color: brown; text-decoration: none; font-family: 'Helvetica', sans-serif;">Contact Us</a></li>
                 </ul>
             </div>
 
             <div class="col-lg-3 text-brown">
-                <h5 style="font-weight: bold; font-family: 'Poppins', sans-serif;">About BungaBoulevard</h5>
+                <h5 style="font-weight: bold; font-family: 'Helvetica', sans-serif;">About BungaBoulevard</h5>
                 <p>
                     <img src="assets/icon/time.png" alt="Business Time" style="height: 20px; width: 20px; margin-right: 5px;">
                     Monday - Friday (10 A.M - 8 P.M)
                 </p>
                 <p>
-                    <a href="mailto:bungaboulevard@gmail.com" style="text-decoration: none; color: inherit; font-family: 'Poppins', sans-serif;">
+                    <a href="mailto:bungaboulevard@gmail.com" style="text-decoration: none; color: inherit; font-family: 'Helvetica', sans-serif;">
                         <img src="assets/icon/email.png" alt="Email" style="height: 20px; width: 20px; margin-right: 5px;">
                         bungaboulevard@gmail.com
                     </a>
                 </p>
                 <p>
-                    <a href="https://wa.me/6018-3352143" style="text-decoration: none; color: inherit; font-family: 'Poppins', sans-serif;">
+                    <a href="https://wa.me/6018-3352143" style="text-decoration: none; color: inherit; font-family: 'Helvetica', sans-serif;">
                         <img src="assets/icon/call.png" alt="Customer Service" style="height: 20px; width: 20px; margin-right: 5px; color: hotpink;">
                         018-335 2143
                     </a>
@@ -54,7 +54,7 @@
 
         </div>
         <hr class="text-brown" style="border-color: #c28163;">
-        <p class="m-0 text-center text-brown" style="font-family: 'Poppins', sans-serif;">Copyright 2023 © BungaBoulevard.co</p>
+        <p class="m-0 text-center text-brown" style="font-family: 'Helvetica', sans-serif;">Copyright 2023 © BungaBoulevard.co</p>
     </div>
 </footer>
 
@@ -80,6 +80,6 @@
 
     footer, footer p {
         color: brown;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Helvetica', sans-serif;
     }
 </style>
