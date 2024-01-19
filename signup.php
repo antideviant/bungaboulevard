@@ -94,7 +94,7 @@ error:function (){}
                                     </div>
                                 </div>
                                 <br>
-                                <button class="btn btn-primary d-block btn-user w-100" style="background-color:#b76e79; border-color: #000000;" type="submit" name="submit" id="submit">Signup</button>
+                                <button class="btn btn-primary d-block btn-user w-100" style="background-color:#b76e79; border-color: #000000;" type="submit" name="submit" id="submit">Sign Up</button>
                             </form>
                             <div class="text-center"></div>
                         </div>
