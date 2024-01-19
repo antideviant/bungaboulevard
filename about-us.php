@@ -23,46 +23,48 @@ error_reporting(0);
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <style>
-        .left-text,
-        .right-text {
-            flex: 1;
-        }
+    .left-text,
+    .right-text {
+        flex: 1;
+    }
 
-        .container-1 {
-            display: flex;
-            align-items: center;
-            padding: 2%;
-            font-family: 'Poppins', Arial, sans-serif;
-            position: relative;
-        }
+    .container-1 {
+        display: flex;
+        align-items: center;
+        padding: 2%;
+        font-family: 'Poppins', Arial, sans-serif;
+        position: relative;
+    }
 
-        .image img {
-            width: 330px;
-            height: 450px;
-            margin-left: -100px;
-        }
+    .image img {
+        width: 330px;
+        height: 450px;
+        margin-left: -100px;
+    }
 
-        .indicators {
-            position: absolute;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 10px;
-        }
+    .indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 10px;
+    }
 
-        .indicator {
-            width: 10px;
-            height: 10px;
-            background-color: #888;
-            border-radius: 50%;
-            cursor: pointer;
-        }
+    .indicator {
+        width: 10px;
+        height: 10px;
+        background-color: transparent; 
+        border-radius: none;
+        cursor: pointer;
+        border: none; 
+    }
 
-        .indicator.active {
-            background-color: #333;
-        }
-    </style>
+    .indicator.active {
+        background-color: #333;
+    }
+</style>
+
 </head>
 
 <body>
@@ -71,13 +73,13 @@ error_reporting(0);
         <div class="container px-4 px-lg-4 mt-4" style="background: #EADDCA;">
             <div class="container-1" style="max-height: 400px;">
                 <div class="left-text">
-                    <h1><b><p style="color: brown; font-size: 50px; font-family: 'Poppins', sans-serif;">About Us</p></b></h1>
+                    <h1><b><p style="color: brown; font-size: 50px; font-family: 'Poppins', sans-serif; margin-top: 100px;">About Us</p></b></h1>
                     <h5 style="font-family: 'Poppins', sans-serif;">Experience the fusion of<br>trendy style and casual<br>comfort. </h5>
                 </div>
                 <div class="image" style="margin-top: 100px;">
                     <img id="aboutUsImage" src="assets\aboutus1.jpg" alt="About Us Image">
                 </div>
-                <div class="right-text" style="font-size: 15px; text-align: justify; margin-left: 50px; font-family: 'Poppins', sans-serif;">
+                <div class="right-text" style="font-size: 15px; text-align: justify; margin-top: 100px; margin-left: 50px; font-family: 'Poppins', sans-serif;">
                     <p>We encourage you to fully immerse yourself in the dynamic world of fashion at BungaBoulevard,
                         where every click is an investigation of style and comfort.
                         Navigate through our chosen collections to <span style="color: brown;"><b> "Experience the fusion of trendy style and casual comfort"</b></span>,
