@@ -195,22 +195,22 @@ if(strlen($_SESSION['id'])==0)
                 ?>
 
                                 <tr>
-                                    <td class="col-md-2" style="width: 15%; text-align:center;"><img src="admin/productimages/<?php echo htmlentities($row['pimage']);?>" alt="<?php echo htmlentities($row['pname']);?>" width="120" height="170"></td>
-                                    <td style="width: 25%; text-align:center;">
+                                    <td class="col-md-2" style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 15%; text-align:center;"><img src="admin/productimages/<?php echo htmlentities($row['pimage']);?>" alt="<?php echo htmlentities($row['pname']);?>" width="120" height="170"></td>
+                                    <td style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 25%; text-align:center;">
                                     <a href="product-details.php?pid=<?php echo htmlentities($pd=$row['pid']);?>"><?php echo htmlentities($row['pname']);?></a></td>
-                <td style="width: 10%; text-align:center;">
+                                    <td style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 10%; text-align:center;">
                                         <span class="text-decoration-line-through">RM<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span>
                                             <span>RM<?php echo htmlentities($row['pprice']);?></span>
                                     </td>
-                                    <td style="width: 10%; text-align:center;"><?php echo htmlentities($row['quantity']);?></td>
-                                    <td style="width: 20%; text-align:center;">RM<?php echo htmlentities($totalamount=$row['quantity']*$row['pprice']);?></td>
+                                    <td style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 10%; text-align:center;"><?php echo htmlentities($row['quantity']);?></td>
+                                    <td style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 20%; text-align:center;">RM<?php echo htmlentities($totalamount=$row['quantity']*$row['pprice']);?>.00</td>
                         
                                 </tr>
                             
                                 <?php $grantotal+=$totalamount; } ?>
                 <tr>
                     <th style="text-align:left;" colspan="4"><h5><strong>Grand Total</strong></h5></th>
-                    <th style="width: 10%; text-align:center;"colspan="2">RM<?php echo $grantotal;?></th>
+                    <th style="width: 10%; text-align:center;"colspan="2">RM<?php echo $grantotal;?>.00</th>
                 </tr>
                                 <?php } else{ ?>
                                 <tr>

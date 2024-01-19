@@ -171,7 +171,7 @@ while ($row=mysqli_fetch_array($ret)) {
                                     <td style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 10%; text-align:center;">
                                         <?php echo htmlentities($row['productQty']);?></td>
                                     <td style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 20%; text-align:center;">RM
-                                        <?php echo htmlentities($totalamount=$row['productQty']*$row['pprice']);?></td>
+                                        <?php echo htmlentities($totalamount=$row['productQty']*$row['pprice']);?>.00</td>
                                     <td style="border: 1px solid #ddd; padding: 8px;text-align: center; width: 10%; text-align:center;">
                                         <a href="my-cart.php?del=<?php echo htmlentities($row['cartid']);?>"
                                             onClick="return confirm('Are you sure you want to delete?')"
@@ -184,7 +184,7 @@ while ($row=mysqli_fetch_array($ret)) {
                 
                                 <tr>
                                     <th colspan="4">Grand Total</th>
-                                    <th style="width: 10%; text-align:center;">RM <?php echo $grantotal;?></th>
+                                    <th style="width: 10%; text-align:center;">RM <?php echo $grantotal;?>.00</th>
                                 </tr>
 
                                 <?php } else{  
