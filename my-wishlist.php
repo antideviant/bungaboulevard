@@ -58,89 +58,74 @@ error:function (){}
 </script>
 <style type="text/css"></style>
     <body>
-<?php include_once('includes/header.php');?>
-        <!-- Header-->
-       <!--  <header class="py-1">
-            <div class="container px-2 px-lg-1 my-4">
-
-                <div class="text-center ">
-                    <h1 class="display-4 fw-bolder">Wishlist</h1>
-                       <h5 class="display-10 fw-bolder">ayunae.co</h5>
-        
+    <?php include_once('includes/header.php');?>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-lg-12 col-xl-9">
+                    <div class="card shadow-lg o-hidden border-0 my-5">
+                        <div class="card-body p-0">
+                            <div class="row">
+                                <div class="col-lg-6 col-xl-12">
+                                    <div class="p-5">
+                                        <?php 
+                                            $uid=$_SESSION['id'];
+                                            $query=mysqli_query($con,"select * from users where id='$uid'");
+                                            while($result=mysqli_fetch_array($query)){
+                                        ?>
+                                        <h2 style="text-align: center; color:#c28163;"><i><?php echo htmlentities($result['name']);?>'s Wishlist</i></h2>
+                                        <br>
+                                        <?php } ?>
+                                        <div class="col-md-12 search-table-col" style="width: 870px;text-align: left;"><span class="counter pull-right"></span>
+                                            <div class="table-responsive table table-hover table-bordered results">
+                                                <table class="table table-hover table-bordered">
+                                                    <thead class="bill-header cs">
+                                                        <tr>
+                                                            <th id="trs-hd-1" class="col-lg-1" style="background: #ff9b94; width: 10%; text-align:center;">Product</th>
+                                                            <th id="trs-hd-2" class="col-lg-2" style="background: #ff9b94; width: 15%; text-align:center;">Product Name</th>
+                                                            <th id="trs-hd-3" class="col-lg-3" style="background: #ff9b94; width: 20%; text-align:center;">Price</th>
+                                                            <th id="trs-hd-4" class="col-lg-4" style="background: #ff9b94; width: 10%; text-align:center;">Action</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <?php
+                                                            $uid=$_SESSION['id'];
+                                                            $ret=mysqli_query($con,"select products.productName as pname,products.productName as proid,products.productImage1 as pimage,products.productPrice as pprice,wishlist.productId as pid,wishlist.id as wid,products.productPriceBeforeDiscount from wishlist join products on products.id=wishlist.productId where wishlist.userId='$uid'");
+                                                            $num=mysqli_num_rows($ret);
+                                                                if($num>0)
+                                                                {
+                                                            while ($row=mysqli_fetch_array($ret)) {
+                                                        ?>
+                                                        <tr>
+                                                            <td class="col-md-2" style="width: 10%; text-align:center;"><img src="admin/productimages/<?php echo htmlentities($row['pimage']);?>" alt="<?php echo htmlentities($row['pname']);?>" width="100" height="130"></td>
+                                                            <td class="col-md-6" style="width: 15%; text-align:center;">
+                                                                <div class="product-name"><a href="product-details.php?pid=<?php echo htmlentities($pd=$row['pid']);?>"><?php echo htmlentities($row['pname']);?></a></div>
+                                                            </td>
+                                                            <td style="width: 20%; text-align:center;">
+                                                                <span class="text-decoration-line-through">RM<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span><br>
+                                                                <span>RM<?php echo htmlentities($row['pprice']);?></span>
+                                                            </td>
+                                                            <td style="width: 20%; text-align:center;">
+                                                                <a href="my-wishlist.php?action=movetocart&id=<?php echo $row['wid']; ?>" class="btn-upper btn btn-primary btn1">Add to Cart</a>
+                                                                <a href="my-wishlist.php?del=<?php echo htmlentities($row['wid']);?>" onClick="return confirm('Are you sure you want to delete?')" class="btn-upper btn btn-danger">Delete</a>
+                                                            </td>
+                                                        </tr>
+                                                        <?php } } else{ ?>
+                                                        <tr>
+                                                            <td colspan="4" style="font-size: 18px; font-weight:bold ">Your Wishlist is Empty</td>
+                                                        </tr>
+                                                        <?php } ?>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </header>
-     Section
-        <section class="py-5">
-            <div class="container px-4  mt-5"> -->
-     
-
-<div class="container custom-container" style="padding: 5%; padding-top: 0; padding-bottom: 0;">
-        <div class="login-box">
-            <!-- /.login-logo -->
-            <div class="card card-outline card-primary" style="margin: 10%; padding: 5%; border: 2px solid #c28163; border-radius: 15px; box-shadow: 0px 0px 5px #654321;">
-                <div class="card-body">
-
-    <div class="table-responsive" style="margin-top: 0;">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th colspan="4"><h4><?php 
-                    $uid=$_SESSION['id'];
-                    $query=mysqli_query($con,"select * from users where id='$uid'");
-                    while($result=mysqli_fetch_array($query)){
-                ?>
-                <h1><?php echo htmlentities($result['name']);?>'s Wishlist</h1>
-                <br>
-                <?php } ?></h4></th>
-                </tr>
-            </thead>
-
-             
-            <tbody>
-
-
-
-<?php
-$uid=$_SESSION['id'];
-$ret=mysqli_query($con,"select products.productName as pname,products.productName as proid,products.productImage1 as pimage,products.productPrice as pprice,wishlist.productId as pid,wishlist.id as wid,products.productPriceBeforeDiscount from wishlist join products on products.id=wishlist.productId where wishlist.userId='$uid'");
-$num=mysqli_num_rows($ret);
-    if($num>0)
-    {
-while ($row=mysqli_fetch_array($ret)) {
-
-?>
-
-                <tr>
-                    <td class="col-md-2"><img src="admin/productimages/<?php echo htmlentities($row['pimage']);?>" alt="<?php echo htmlentities($row['pname']);?>" width="100" height="130"></td>
-                    <td class="col-md-6">
-                        <div class="product-name"><a href="product-details.php?pid=<?php echo htmlentities($pd=$row['pid']);?>"><?php echo htmlentities($row['pname']);?></a></div>
-                           <span class="text-decoration-line-through">RM<?php echo htmlentities($row['productPriceBeforeDiscount']);?></span>
-                            <span>RM<?php echo htmlentities($row['pprice']);?></span>
-                    </td>
-                    <td>
-                        <a href="my-wishlist.php?action=movetocart&id=<?php echo $row['wid']; ?>" class="btn-upper btn btn-primary btn1">Add to Cart</a>
-                    </td>
-                    <td>
-                        <a href="my-wishlist.php?del=<?php echo htmlentities($row['wid']);?>" onClick="return confirm('Are you sure you want to delete?')" class="btn-upper btn btn-danger">Delete</a>
-                    </td>
-                </tr>
-                <?php } } else{ ?>
-                <tr>
-                    <td style="font-size: 18px; font-weight:bold ">Your Wishlist is Empty</td>
-
-                </tr>
-                <?php } ?>
-            </tbody>
-        </table>
-    </div>
-              
-            </div>
-</div>
-</div>
-</div>
- 
-</div>
+        </div>
         </section>
         <!-- Footer-->
    <?php include_once('includes/footer.php'); ?>
