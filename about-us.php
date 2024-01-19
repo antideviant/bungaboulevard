@@ -65,14 +65,14 @@ error_reporting(0);
 <body>
     <?php include_once('includes/header.php'); ?>
     <section class="py-0">
-        <div class="container px-4 px-lg-5 mt-5" style="background: #EADDCA;">
-            <div class="container-1">
+        <div class="container px-4 px-lg-4 mt-4" style="background: #EADDCA;">
+            <div class="container-1" style="max-height: 400px;">
                 <div class="left-text">
                     <h1><b><p style="color: brown; font-size: 50px;">About Us</p></b></h1>
                     <h5>Experience the fusion of<br>trendy style and casual<br>comfort. </h5>
                 </div>
-                <div class="image">
-                    <img id="aboutUsImage" src="assets\aboutus1.jpg" alt="About Us Image">
+                    <div class="image" style="margin-top: 100px;">
+                        <img id="aboutUsImage" src="assets\aboutus1.jpg" alt="About Us Image">
                 </div>
                 <div class="right-text" style="font-size: 15px; text-align: justify; margin-left: 50px; font-family: Poppins, Arial, sans-serif;">
                     <p>We encourage you to fully immerse yourself in the dynamic world of fashion at BungaBoulevard,
@@ -93,14 +93,12 @@ error_reporting(0);
                     "assets/aboutus4.jpg",
                     "assets/aboutus5.jpg",
                     "assets/aboutus6.jpg",
-                    // Add more image paths as needed
                 ];
 
                 let currentImageIndex = 0;
                 const aboutUsImage = document.getElementById("aboutUsImage");
                 const indicatorsContainer = document.getElementById("indicators");
 
-                // Create indicators based on the number of images
                 for (let i = 0; i < imageSources.length; i++) {
                     const indicator = document.createElement("div");
                     indicator.classList.add("indicator");
@@ -109,16 +107,11 @@ error_reporting(0);
                 }
 
                 const indicators = document.querySelectorAll(".indicator");
-
-                // Set the first indicator as active initially
                 indicators[currentImageIndex].classList.add("active");
 
-                // Function to change image and update indicators
                 function changeImage(index) {
                     currentImageIndex = index;
                     aboutUsImage.src = imageSources[currentImageIndex];
-
-                    // Update indicators
                     indicators.forEach((indicator, i) => {
                         if (i === currentImageIndex) {
                             indicator.classList.add("active");
@@ -128,14 +121,12 @@ error_reporting(0);
                     });
                 }
 
-                // Add click event listeners to indicators
                 indicators.forEach((indicator, i) => {
                     indicator.addEventListener("click", () => {
                         changeImage(i);
                     });
                 });
 
-                // Automatic image sliding every 5 seconds
                 setInterval(() => {
                     currentImageIndex = (currentImageIndex + 1) % imageSources.length;
                     changeImage(currentImageIndex);
