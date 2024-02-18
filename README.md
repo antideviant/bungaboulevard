@@ -1,2 +1,2 @@
 # bungaboulevard
- ICT600 E-Commerce Website - In Progress
+ ICT600 E-Commerce Website - BETA
